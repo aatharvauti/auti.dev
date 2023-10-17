@@ -6,7 +6,7 @@ baseURL = "https://auti.dev"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "auti.dev ˶^•ﻌ•^˵"
+title = "auti.dev ^•ﻌ•^"
 author = "Atharva Auti"
 copyright = "Copyright © 2023, Atharva Auti."
 languageCode = "en-US"
@@ -38,11 +38,11 @@ ignoreErrors = ["error-disable-taxonomy"]
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "auti.dev ˶^•ﻌ•^˵"
+  title = "auti.dev ^•ﻌ•^"
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
-  # hideMadeWithLine = true
+   hideMadeWithLine = true
 
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config
