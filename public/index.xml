@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>auti.dev ^•ﻌ•^</title>
+    <link>https://auti.dev/</link>
+    <description>Recent content on auti.dev ^•ﻌ•^</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Tue, 17 Oct 2023 12:35:53 +0530</lastBuildDate><atom:link href="https://auti.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demystifying Elastic SIEM</title>
+      <link>https://auti.dev/demystifying-elastic-siem/</link>
+      <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/demystifying-elastic-siem/</guid>
+      <description>Introduction Hey there! Following my recent presentation at the Elastic Community Event, I&amp;rsquo;m thrilled to extend the insights into setting up Elastic for cybersecurity tools. In this blog, we&amp;rsquo;ll take a hands-on approach, providing a detailed guide on leveraging Elasticsearch and its toolkit. Our focus? Building a robust Security Information and Event Management (SIEM) tool, seamlessly incorporating Suricata, Wazuh, Windows Sysmon, network packet capture, and Apache Webserver. All of this orchestrated within the dependable Proxmox stack and Debian server containers.</description>
+    </item>
+    
+    <item>
+      <title>Elastic Cyber</title>
+      <link>https://auti.dev/talk/elastic-cyber/</link>
+      <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/talk/elastic-cyber/</guid>
+      <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com
+This talk is all about how one can leverage Cybersecurity and create awesome tools and integrations using ElasticSearch&amp;rsquo;s builtin integrations. These integrations can be used with pre-existing open source as well as proprietary Cybersecurity tools like Suricata, Snort, etc. Not only specialized cybersecurity tools, but also Apache Web Server integration that can monitor an Apache2 instance for access and error logs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://auti.dev/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://auti.dev/projects/</guid>
+      <description>Projects </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://auti.dev/talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://auti.dev/talk/</guid>
+      <description>Talk </description>
+    </item>
+    
+  </channel>
+</rss>

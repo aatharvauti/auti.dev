@@ -1,6 +1,6 @@
 
 # 👋  Hello, World! 
-## I am Atharva Auti ;D
+## I am Atharva Auti 
 
 I am a final-year college student pursuing my **Bachelor of Engineering (B.E.)** in Cyber Security degree at **Mumbai University**. I am an enthusiastic Programmer and a Networking geek with experience working as a **Cybersecurity Researcher and Developer**.
 
