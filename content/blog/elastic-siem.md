@@ -32,6 +32,12 @@ Refer the Official and Latest Elasticsearch Installation [Documentation](https:/
 
 On my personal setup, I created a docker container on a Proxmox LXC which you can download [here](https://drive.google.com/drive/u/0/folders/1M-9qPvdHuzvPfYbTZ8KOtgQ8vltnrFIM)
 
+## Tutorial: Adding an ElasticSearch Integration
+
+We'll learn to add an integration for an Apache2 Web Server Monitoring for a client machine using the Standalone Elastic Agent method.
+
+<iframe style="align: center" src="https://docs.google.com/presentation/d/e/2PACX-1vR_cUt2Yd1uTqRjYLFaPDMHoc0reBWPF_BYg6Ns1_NH2HEszQGHquApPaxWYWGRqYYmgq8OWcKYq2XP/embed?start=false&loop=false" frameborder="0" width="548" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
 ## Building the Arsenal: Integrating Essential Tools
 
 Our SIEM's strength lies in integration. 
@@ -40,21 +46,40 @@ Our SIEM's strength lies in integration.
 
 Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities.
 
+![Figure: Suricata Integration](https://auti.dev/images/blog/demystifying-elastic-siem/suricata-1.png)
+
+![Figure: Suricata Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/suricata-2.png)
+
 ### Windows Sysmon 
 
 Windows Sysmon provides advanced system monitoring for Windows environments.
+
+![Figure: Windows Sysmon Integration](https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-1.png)
+
+![Figure: Windows Sysmon Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-2.png)
 
 ## Decoding Conversations: Network Packet Capture
 
 Understanding digital conversations is key in the cyber realm. Network packet capture becomes our decoder, eavesdropping on these conversations to identify patterns and anomalies that may indicate security incidents.
 
+![Figure: Network Packet Capture Integration](https://auti.dev/images/blog/demystifying-elastic-siem/npc-1.png)
+
+![Figure: Network Packet Capture Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/npc-2.png)
+
 ## Securing the Web: Apache Webserver
 
 Enter the Apache Webserver, a critical component in securing web environments. Its role is to scrutinize web traffic, offering protection against potential vulnerabilities and cyber threats.
 
+![Figure: Apache Web Server Integration](https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-1.png)
+
+![Figure: Apache Web Server Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-2.png)
+
 ## Architectural Symphony: Proxmox and Debian Synergy
 
 In orchestrating this cybersecurity symphony, the Proxmox stack and Debian server containers take center stage. Their virtualization capabilities create a flexible and scalable environment, essential for adapting to the evolving cybersecurity landscape.
+
+![Figure: Proxmox Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/pxmx-1.png)
+
 
 ## Conclusion: Empowering Cyber Defenses
 

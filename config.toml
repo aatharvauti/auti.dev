@@ -45,6 +45,10 @@ ignoreErrors = ["error-disable-taxonomy"]
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   hideMadeWithLine = true
 
+  # RAW HTML
+  [markup.goldmark.renderer]
+  unsafe= true
+
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config
   # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
