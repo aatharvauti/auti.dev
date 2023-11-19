@@ -2,9 +2,6 @@
 title = "Demystifying Elastic SIEM"
 date = "2023-10-17T12:35:53+05:30"
 
-#
-# description is optional
-#
  description = "A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"
 
 tags = ["elasticsearch", "cybersecurity", "siem-soc", "blue-teaming", "tools" ]
@@ -37,7 +34,15 @@ On my personal setup, I created a docker container on a Proxmox LXC which you ca
 
 ## Building the Arsenal: Integrating Essential Tools
 
-Our SIEM's strength lies in integration. Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities. Windows Sysmon provides advanced system monitoring for Windows environments.
+Our SIEM's strength lies in integration. 
+
+### Suricata
+
+Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities.
+
+### Windows Sysmon 
+
+Windows Sysmon provides advanced system monitoring for Windows environments.
 
 ## Decoding Conversations: Network Packet Capture
 
