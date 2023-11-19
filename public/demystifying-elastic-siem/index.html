@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="https://auti.dev/images/favicon.ico" />
-<title>Demystifying Elastic SIEM | auti.dev ^•ﻌ•^</title>
+<title>Demystifying Elastic SIEM | auti.dev &lt;^•ﻌ•^&gt;</title>
 <meta name="title" content="Demystifying Elastic SIEM" />
 <meta name="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations" />
 <meta name="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://auti.dev/demystifying-elastic-siem/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-10-17T12:35:53+05:30" />
-<meta property="article:modified_time" content="2023-10-17T12:35:53+05:30" /><meta property="og:site_name" content="auti.dev ^•ﻌ•^" />
+<meta property="article:modified_time" content="2023-10-17T12:35:53+05:30" /><meta property="og:site_name" content="auti.dev &lt;^•ﻌ•^&gt;" />
 
 
 
@@ -32,13 +32,13 @@
 <meta itemprop="name" content="Demystifying Elastic SIEM">
 <meta itemprop="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"><meta itemprop="datePublished" content="2023-10-17T12:35:53+05:30" />
 <meta itemprop="dateModified" content="2023-10-17T12:35:53+05:30" />
-<meta itemprop="wordCount" content="423"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="wordCount" content="431"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
 <meta itemprop="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
   body {
-    font-family: Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: auto;
     padding: 10px;
     max-width: 720px;
@@ -161,7 +161,8 @@
   }
 
   ul.blog-posts li a:visited {
-    color: #8b6fcb;
+    color: rgba(230, 52, 52, 0.75);
+;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -261,7 +262,7 @@
 
 <body>
   <header><a href="/" class="title">
-  <h2>auti.dev ^•ﻌ•^</h2>
+  <h2>auti.dev &lt;^•ﻌ•^&gt;</h2>
 </a>
 <nav><a href="/">Home</a>
 
@@ -272,7 +273,7 @@
 <a href="/talk">Talks</a>
 
 
-<a href="/projects">Projects</a>
+<a href="/project">Projects</a>
 </nav>
 </header>
   <main>
@@ -292,28 +293,14 @@
 <h2 id="unlocking-potential-harnessing-elasticsearch">Unlocking Potential: Harnessing Elasticsearch</h2>
 <p>Let&rsquo;s kick off with Elasticsearch, our foundation for this cybersecurity endeavor.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/elastic-usecase.png" alt="Figure: ElasticStack Use Cases"></p>
-<table>
-<thead>
-<tr>
-<th>ElasticStack Use Cases</th>
-<th></th>
-</tr>
-</thead>
-</table>
+<h4 id="elasticstack-use-cases">ElasticStack Use Cases</h4>
 <p>As an open-source, distributed search, and analytics engine, it offers scalability and real-time search capabilities. Think of it as the engine driving the aggregation, analysis, and visualization of diverse datasets.</p>
 <p><a href="https://www.elastic.co/security/siem">SIEM</a> stands for Security Information and Event Management  It is a security solution that helps organizations detect, analyze, and respond to security threats. SIEM tools collect, aggregate, and analyze LARGE volumes of data from an organization&rsquo;s apps, devices, servers, &amp; users in real-time, so security teams can detect &amp; block attacks.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/elastic-siem.png" alt="Figure: Elastic SIEM"></p>
-<table>
-<thead>
-<tr>
-<th>Overview of Elastic SIEM</th>
-<th></th>
-</tr>
-</thead>
-</table>
+<h4 id="overview-of-elasticsiem">Overview of ElasticSIEM</h4>
 <h3 id="installing-elasticsearch-and-kibana-using-docker">Installing Elasticsearch and Kibana using Docker</h3>
 <p>Refer the Official and Latest Elasticsearch Installation <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html">Documentation</a> and Kibana <a href="https://www.elastic.co/guide/en/kibana/current/docker.html">Documentation</a></p>
-<p>On my personal setup, I created a docker container</p>
+<p>On my personal setup, I created a docker container on a Proxmox LXC which you can download <a href="https://drive.google.com/drive/u/0/folders/1M-9qPvdHuzvPfYbTZ8KOtgQ8vltnrFIM">here</a></p>
 <h2 id="building-the-arsenal-integrating-essential-tools">Building the Arsenal: Integrating Essential Tools</h2>
 <p>Our SIEM&rsquo;s strength lies in integration. Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities. Windows Sysmon provides advanced system monitoring for Windows environments.</p>
 <h2 id="decoding-conversations-network-packet-capture">Decoding Conversations: Network Packet Capture</h2>

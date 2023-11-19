@@ -19,25 +19,21 @@ Hey there! Following my recent [presentation](https://auti.dev/talk/elastic-cybe
 Let's kick off with Elasticsearch, our foundation for this cybersecurity endeavor.
 
 ![Figure: ElasticStack Use Cases](https://auti.dev/images/blog/demystifying-elastic-siem/elastic-usecase.png)
-
-| ElasticStack Use Cases | |
-|------------------------|-|
+#### ElasticStack Use Cases
 
 As an open-source, distributed search, and analytics engine, it offers scalability and real-time search capabilities. Think of it as the engine driving the aggregation, analysis, and visualization of diverse datasets.
 
 [SIEM](https://www.elastic.co/security/siem) stands for Security Information and Event Management  It is a security solution that helps organizations detect, analyze, and respond to security threats. SIEM tools collect, aggregate, and analyze LARGE volumes of data from an organization's apps, devices, servers, & users in real-time, so security teams can detect & block attacks.
 
 ![Figure: Elastic SIEM](https://auti.dev/images/blog/demystifying-elastic-siem/elastic-siem.png)
-
-| Overview of Elastic SIEM | |
-|--------------------------|-|
+#### Overview of ElasticSIEM
 
 
 ### Installing Elasticsearch and Kibana using Docker
 
-Refer the Official and Latest Elasticsearch Installation [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) and Kibana [Documentation](https://www.elastic.co/guide/en/kibana/current/docker.html)  
+Refer the Official and Latest Elasticsearch Installation [Documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) and Kibana [Documentation](https://www.elastic.co/guide/en/kibana/current/docker.html)
 
-On my personal setup, I created a docker container 
+On my personal setup, I created a docker container on a Proxmox LXC which you can download [here](https://drive.google.com/drive/u/0/folders/1M-9qPvdHuzvPfYbTZ8KOtgQ8vltnrFIM)
 
 ## Building the Arsenal: Integrating Essential Tools
 

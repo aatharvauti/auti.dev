@@ -18,10 +18,10 @@
     <loc>https://auti.dev/demystifying-elastic-siem/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
-    <loc>https://auti.dev/talk/elastic-cyber/</loc>
+    <loc>https://auti.dev/blog/elasticsearch/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
-    <loc>https://auti.dev/blog/elasticsearch/</loc>
+    <loc>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/siem-soc/</loc>
@@ -32,6 +32,18 @@
   </url><url>
     <loc>https://auti.dev/blog/tools/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/honeypot/</loc>
+    <lastmod>2023-08-19T14:28:54+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/honeytrack/</loc>
+    <lastmod>2023-08-19T14:28:54+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/project/</loc>
+    <lastmod>2023-08-19T14:28:54+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/purple-teaming/</loc>
+    <lastmod>2023-08-19T14:28:54+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/projects/</loc>
     <priority>0</priority>

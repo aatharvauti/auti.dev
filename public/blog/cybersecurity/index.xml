@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cybersecurity on auti.dev ^•ﻌ•^</title>
+    <title>cybersecurity on auti.dev &lt;^•ﻌ•^&gt;</title>
     <link>https://auti.dev/blog/cybersecurity/</link>
-    <description>Recent content in cybersecurity on auti.dev ^•ﻌ•^</description>
+    <description>Recent content in cybersecurity on auti.dev &lt;^•ﻌ•^&gt;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
@@ -18,13 +18,23 @@
     </item>
     
     <item>
-      <title>Elastic Cyber</title>
-      <link>https://auti.dev/talk/elastic-cyber/</link>
+      <title>Leveraging Cybersecurity using ElasticSearch</title>
+      <link>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</link>
       <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
       
-      <guid>https://auti.dev/talk/elastic-cyber/</guid>
+      <guid>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</guid>
       <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com
 This talk is all about how one can leverage Cybersecurity and create awesome tools and integrations using ElasticSearch&amp;rsquo;s builtin integrations. These integrations can be used with pre-existing open source as well as proprietary Cybersecurity tools like Suricata, Snort, etc. Not only specialized cybersecurity tools, but also Apache Web Server integration that can monitor an Apache2 instance for access and error logs.</description>
+    </item>
+    
+    <item>
+      <title>HoneyTrack</title>
+      <link>https://auti.dev/honeytrack/</link>
+      <pubDate>Sat, 19 Aug 2023 14:28:54 +0530</pubDate>
+      
+      <guid>https://auti.dev/honeytrack/</guid>
+      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak ☠️. Honeypots are one of the most concerned topics in the field of cyber security currently.
+HoneyTrack is a honeypot 🍯 cum SIEM tool 📊 that uses various technologies like Docker 🐋, Shell 🐚 Scripts, Python 🐍, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
     
   </channel>

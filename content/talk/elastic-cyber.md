@@ -1,5 +1,5 @@
 +++
-title = "Elastic Cyber"
+title = "Leveraging Cybersecurity using ElasticSearch"
 date = "2023-10-17T12:35:53+05:30"
 
  description = "Leveraging Cybersecurity using ElasticSearch"

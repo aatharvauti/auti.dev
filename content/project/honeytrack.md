@@ -1,25 +1,22 @@
----
-title: "Honeytrack"
-date: 2023-10-19T14:28:54+05:30
-draft: true
----
++++
+title = "HoneyTrack"
+date = "2023-08-19T14:28:54+05:30"
 
+ description = "Honeypot with a twist of Red Teaming"
+
+tags = ["cybersecurity", "honeypot", "elasticsearch", "purple-teaming", "tools"]
++++
+
+# Honeypot with a twist of **Red Teaming**
 
 ![](https://auti.dev/images/project/honeytrack/Header.png)
-
-## Honeypot with a twist of **Red Teaming**
----
 
 With the tremendous growth of **cyber-attacks**, the loss of private or sensitive data has risen to a peak ☠️. Honeypots are one of the most concerned topics in the field of cyber security currently.
 
 
 HoneyTrack is a **honeypot** 🍯 cum **SIEM tool** 📊 that uses various technologies like **Docker** 🐋, **Shell** 🐚 Scripts, **Python** 🐍, **Elastic Search** 🔍, **Kibana** 📈, and **Filebeat** 📂 which protect an organization's database as well it backtracks the hacker when it intrudes the target network. &nbsp;
 
-
-![](https://auti.dev/images/project/honeytrack/globe.gif)
-
-
-Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker 💀. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.
+Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.
 
 However, this honeypot is like a traditional honeypot but quite updated with **new-generation technology** 🚀 and their needs related to cyber-security. &nbsp;
 
@@ -35,17 +32,19 @@ Later, **python** 🐍 codes were developed to build the honeypot and set all it
 
 Check out other repositories at [github/HoneyTrack](https://github.com/HoneyTrack)
 
-![](https://auti.dev/images/project/honeytrack/1.png)
-Fig. Local Network Architecture (On ORACLE Virtual Box)
+## Network Architecture
 
-The figure above represents a testing diagram used to demonstrate HoneyTrack on Local Networks in Oracle VirtualBox.
+![](https://auti.dev/images/project/honeytrack/1.png)
+#### Fig. Deployed Network Architecture
+
+The figure above represents a testing diagram used to demonstrate HoneyTrack on a deployed network at a college in the University of Mumbai.
 
 Any request outside of the network must pass through the firewall. There are certain parameters used to determine a malicious attacker such that he will be redirected to Honeypot in a separate VLAN.
 
-&nbsp;
+## Data Flow Architecture
 
 ![](https://auti.dev/images/project/honeytrack/2.png)
-Fig. Data Flow Diagram
+#### Fig. Data Flow Diagram
 
 The figure above represents the data flow or application flow diagram of HoneyTrack.
 
@@ -234,7 +233,7 @@ The logs generated are stored in the logs database with a backup set as a cronjo
 
 To test Honeytrack, we set it up live on Azure Cloud ☁️ and monitored attacks for 30 days which generated 1,000,000+ logs 📊. This provided a great insight on both - the tool as well as the emerging Cyberattacks throughout the world 🌎.
 
-After the successful tests, we collaborated 🤝🏻 with Cyberpeace Foundation through Department of Cybersecurity at Shah and Anchor Kutchhi Engineering College.
+After the successful tests, we collaborated with Cyberpeace Foundation through Department of Cybersecurity at Shah and Anchor Kutchhi Engineering College.
 
 This project was exhibited for the first CiiA Exhibition at Worli, Mumbai where Innovative projects were presented. The project also won 2nd 🥈 Prize at "Technovation" - National Paper Presentation Competition.
 
@@ -242,9 +241,10 @@ An [IEEE Paper](https://ieeexplore.ieee.org/document/10063105) Presentation and 
 
 &nbsp;
 
+### "HoneyTrack" was my 2nd year Engineering Mini Project
 
-**"HoneyTrack"** was my 2nd year Engineering Mini Project, collaborated with [Vivek Mishra](https://www.linkedin.com/in/vivek051/), [Jay Makwana](https://www.linkedin.com/in/thejaymakwana/), and [Shrawani Pagar](https://www.linkedin.com/in/shrawani-js-pagar-382610215/).
+Collaborated with [Vivek Mishra](https://www.linkedin.com/in/vivek051/), [Jay Makwana](https://www.linkedin.com/in/thejaymakwana/), and [Shrawani Pagar](https://www.linkedin.com/in/shrawani-js-pagar-382610215/).
 
-I'd also like to thank our industrial mentors [Ojas Dedia](https://www.linkedin.com/in/ojas-dedhiya-16276ab4/) and [Pruthav Joshi](https://www.linkedin.com/in/pruthavjoshi/overlay/contact-info/) who showed us the right direction of implementing ElasticSearch with Core-HoneyTrack.
+Special Thanks to our mentors [Dr. Nilakshi Jain](https://www.linkedin.com/in/dr-nilakshi-jain-7593a264/), [Dr. Asha Durafe](https://www.linkedin.com/in/dr-asha-durafe-56605836/), [Dr. Shwetambari Borade](https://www.linkedin.com/in/dr-shwetambari-borade-a05a113b/) and [Maj. Vineet Kumar](https://www.linkedin.com/in/cybervineet/) for helping us with the Research and Funding. I'd also like to thank our industrial mentors [Ojas Dedia](https://www.linkedin.com/in/ojas-dedhiya-16276ab4/) and [Pruthav Joshi](https://www.linkedin.com/in/pruthavjoshi/overlay/contact-info/) who showed us the right direction of implementing ElasticSearch with Core-HoneyTrack.
 
 Later, we demonstrated HoneyTrack and other uses of Elastic Search for Cybersecurity in the [Elastic Cyber Talk](https://auti.dev/talk/elastic-cyber)

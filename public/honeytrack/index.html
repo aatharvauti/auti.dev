@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://auti.dev/images/favicon.ico" />
+<title>HoneyTrack | auti.dev &lt;^•ﻌ•^&gt;</title>
+<meta name="title" content="HoneyTrack" />
+<meta name="description" content="Honeypot with a twist of Red Teaming" />
+<meta name="keywords" content="cybersecurity,honeypot,elasticsearch,purple-teaming,tools," />
+
+
+<meta property="og:title" content="HoneyTrack" />
+<meta property="og:description" content="Honeypot with a twist of Red Teaming" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://auti.dev/honeytrack/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="project" />
+<meta property="article:published_time" content="2023-08-19T14:28:54+05:30" />
+<meta property="article:modified_time" content="2023-08-19T14:28:54+05:30" /><meta property="og:site_name" content="auti.dev &lt;^•ﻌ•^&gt;" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://auti.dev/images/share.png"/>
+
+<meta name="twitter:title" content="HoneyTrack"/>
+<meta name="twitter:description" content="Honeypot with a twist of Red Teaming"/>
+
+
+
+<meta itemprop="name" content="HoneyTrack">
+<meta itemprop="description" content="Honeypot with a twist of Red Teaming"><meta itemprop="datePublished" content="2023-08-19T14:28:54+05:30" />
+<meta itemprop="dateModified" content="2023-08-19T14:28:54+05:30" />
+<meta itemprop="wordCount" content="1332"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="keywords" content="cybersecurity,honeypot,elasticsearch,purple-teaming,tools," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    padding: 10px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: rgba(230, 52, 52, 0.75);
+;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+
+     
+     
+     
+     
+     
+     
+
+    body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        font-weight: 800;
+    }
+
+    a {
+    color: rgba(230, 52, 52, 0.75);
+    text-decoration: none;
+    position: relative;
+    transition: width 0.5s ease;
+    }
+
+    a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(230, 52, 52);
+    transition: width 0.5s ease;
+    }
+
+    a:hover {
+    color: rgba(230, 52, 52, 1);
+    transition: width 0.5s ease;
+    }
+    a:hover::before {
+    width: 100%;  
+    }
+
+</style></head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>auti.dev &lt;^•ﻌ•^&gt;</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/talk">Talks</a>
+
+
+<a href="/project">Projects</a>
+</nav>
+</header>
+  <main>
+
+<content>
+  <h1 id="honeypot-with-a-twist-of-red-teaming">Honeypot with a twist of <strong>Red Teaming</strong></h1>
+<p><img src="https://auti.dev/images/project/honeytrack/Header.png" alt=""></p>
+<p>With the tremendous growth of <strong>cyber-attacks</strong>, the loss of private or sensitive data has risen to a peak ☠️. Honeypots are one of the most concerned topics in the field of cyber security currently.</p>
+<p>HoneyTrack is a <strong>honeypot</strong> 🍯 cum <strong>SIEM tool</strong> 📊 that uses various technologies like <strong>Docker</strong> 🐋, <strong>Shell</strong> 🐚 Scripts, <strong>Python</strong> 🐍, <strong>Elastic Search</strong> 🔍, <strong>Kibana</strong> 📈, and <strong>Filebeat</strong> 📂 which protect an organization&rsquo;s database as well it backtracks the hacker when it intrudes the target network.  </p>
+<p>Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.</p>
+<p>However, this honeypot is like a traditional honeypot but quite updated with <strong>new-generation technology</strong> 🚀 and their needs related to cyber-security.  </p>
+<p><img src="https://auti.dev/images/project/honeytrack/elk.gif" alt=""></p>
+<h2 id="methodology">Methodology</h2>
+<p>The first step and concern behind developing this project were to ensure data privacy and safety by every means for every organization. Everything was built from scratch to come up with a safe and extremely secure tool. To initiate the process an environment was created in which a honeypot could be set up.</p>
+<p>To accomplish this stage, <strong>Docker</strong> 🐋, an open-source software, helped us create a base of the <strong>LINUX</strong> 🐧 system where we could build the entire honeypot. When the <strong>intruder</strong> 👺 first tries to intrude into the system uses a <strong>brute force</strong> attack. However, there is a very rare possibility of it cracking into the system.</p>
+<p>Later, <strong>python</strong> 🐍 codes were developed to build the honeypot and set all its functionalities. In the worst-case scenario, where the cracker succeeds in intruding into our honeypot he will be affected by <strong>payloads (viruses)</strong> ☠️.</p>
+<p>Check out other repositories at <a href="https://github.com/HoneyTrack">github/HoneyTrack</a></p>
+<h2 id="network-architecture">Network Architecture</h2>
+<p><img src="https://auti.dev/images/project/honeytrack/1.png" alt=""></p>
+<h4 id="fig-deployed-network-architecture">Fig. Deployed Network Architecture</h4>
+<p>The figure above represents a testing diagram used to demonstrate HoneyTrack on a deployed network at a college in the University of Mumbai.</p>
+<p>Any request outside of the network must pass through the firewall. There are certain parameters used to determine a malicious attacker such that he will be redirected to Honeypot in a separate VLAN.</p>
+<h2 id="data-flow-architecture">Data Flow Architecture</h2>
+<p><img src="https://auti.dev/images/project/honeytrack/2.png" alt=""></p>
+<h4 id="fig-data-flow-diagram">Fig. Data Flow Diagram</h4>
+<p>The figure above represents the data flow or application flow diagram of HoneyTrack.</p>
+<p>The logs generated are stored in the logs database with a backup set as a cronjob on a regular basis. The data will be collected by the Elastic Agent or Filebeats, that would be passed on to Elastic Search&rsquo;s Discovery and then a Dashboard is created using Kibana.</p>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>
+<p>Install Docker for your host operating system (Linux is preferred)</p>
+<p>Documentation to install docker can be found on <a href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</a></p>
+</li>
+<li>
+<p>Clone the repository</p>
+<pre tabindex="0"><code>git clone git@github.com:aatharvauti/HoneyTrack-SSH.git
+</code></pre></li>
+<li>
+<p>Build the Guest Docker Container</p>
+<pre tabindex="0"><code>sudo docker build -t local/honeytrack-ssh-vf-cloud:latest -f docker/Dockerfile .
+</code></pre><pre tabindex="0"><code>-t &lt;user/name:version&gt;      tag of the built image
+-f &lt;Dockerfile&gt;             Location of the Dockerfile
+</code></pre></li>
+<li>
+<p>Run the Guest Docker Image</p>
+<pre tabindex="0"><code>sudo docker container run --restart=always -it --hostname ssh-server\
+-p 22:22 local/honeytrack-ssh-vf-cloud:latest /bin/bash
+</code></pre><pre tabindex="0"><code>--restart=always        Container restarts instead of exiting
+-it                     Interactive Mode for shell access
+--hostname &lt;name&gt;       Public Hostname for the container
+-p &lt;port:port&gt;          Binding of exposed ports between HOST:DOCKER
+&lt;name of the image&gt;     The -t &lt;name&gt; from the previous command
+&lt;command&gt;               Command to run when the container starts
+</code></pre></li>
+</ol>
+<p> </p>
+<p><img src="https://auti.dev/images/project/honeytrack/3.png" alt=""></p>
+<ol start="5">
+<li>
+<p>Docker Internal Configuration</p>
+<p>Run the start.sh shell script to configure the parameters of Honeypot</p>
+<pre tabindex="0"><code># ./start.sh
+</code></pre></li>
+<li>
+<p>Set a new ROOT password for the Honeypot</p>
+<pre tabindex="0"><code>Set a password for the root user:
+
+New password:
+Retype new password:
+passwd: password updated successfully
+</code></pre></li>
+<li>
+<p>Set the frequency of CRON jobs</p>
+<pre tabindex="0"><code>Select an Option:
+1] Every minute (Live - recommended if using SSH transfer)
+2] Hourly (24 times a day)
+3] Every 8 hours (3 times a day)
+4] Daily (once a day)
+</code></pre></li>
+<li>
+<p>Configuring SSH transfer of logs</p>
+<p>Make sure that your host&rsquo;s SSH port is not 22 since it will be allocated for the Honeypot.
+You can change the SSH configuration of the host machine at <code>/etc/ssh/sshd_config</code></p>
+<p>Use the default options and an empty passphrase for generating keys</p>
+<pre tabindex="0"><code>Do you want to configure SSH transfer? (Y/n): y
+Generating Keys
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx root@ssh-server
+The key&#39;s randomart image is:
++---[RSA 3072]----+
+| xxxxxxxx.       |
+| xxxxxxxxx.      |
+|xxxxxxxxxx       |
+|o+o . .+oo       |
+|.oo.  . S        |
+|oo.    .         |
+|.E.. o           |
+|. ooX            |
+|  o*.+.          |
++----[SHA256]-----+
+Keys generated Successfully
+</code></pre></li>
+<li>
+<p>Configure the transfer by entering Host Machine&rsquo;s details
+You might need a public IP with virtual servers (static) or ddns enabled (dynamic) to use your host machine&rsquo;s IP address to connect SSH if you&rsquo;re transfering from a remote machine. You can also use VPN services like <a href="https://vpn.net/linux">LOGMEIN</a>, <a href="https://www.zerotier.com/">ZEROTIERONE</a> or <a href="https://nordvpn.com/meshnet/">MESHNET by NordVPN</a> or set up <a href="https://www.cloudflare.com/en-gb/products/tunnel/">Cloudflare Tunneling</a> in your machine.</p>
+<pre tabindex="0"><code>Enter the username of the remote SSH machine
+auti
+
+Enter the IP Address of the remote SSH machine
+192.168.0.108
+
+Enter the SSH port of the remote SSH machine
+1234
+
+Enter the remote path to store logs
+/home/auti/HoneyTrack-Logs
+Uploading Key to Remote Server....
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: &#34;/root/.ssh/id_rsa.pub&#34;
+
+The authenticity of host &#39;[192.168.0.108]:1234 ([192.168.0.108]:1234)&#39; can&#39;t be established.
+ECDSA key fingerprint is SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+
+auti@192.168.0.108&#39;s password:
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   &#34;ssh -p &#39;1234&#39; &#39;auti@192.168.0.108&#39;&#34;
+and check to make sure that only the key(s) you wanted were added.
+
+SSH has been configured successfully
+</code></pre></li>
+<li>
+<p>Configure Logs using Email Transfer
+Note that this is inefficient way of transfering logs remotely and your email inbox storage can also fill up very soon. This method is generally not recommended over SSH.</p>
+<p>To configure email, you first need to</p>
+<ul>
+<li>Enable 2FA on your email service account (Google Email is preferred)</li>
+<li>Create a New App Password (Manage Account &gt; Search for App Password &gt; Create New)</li>
+<li>Note down the App Password as it won&rsquo;t be visible again</li>
+</ul>
+<p>The password would be hidden and not be <code>******</code> as normal behavior in Linux</p>
+<pre tabindex="0"><code>
+Do you want to configure email transfer? (Y/n): y
+Enter the Correspondent&#39;s EMAIL Address
+example@example.com
+
+Enter the Password for the given EMAIL Address
+
+Enter the First Recipient&#39;s EMAIL Address
+rec1@example.com
+
+Enter the Second Recipient&#39;s EMAIL Address
+rec2@example.com
+Email has been configured successfully
+</code></pre></li>
+<li>
+<p>HoneyTrack is setup and now you&rsquo;re good to go!</p>
+<p>The logs are being collected and stored at the following locations</p>
+<pre tabindex="0"><code>- /var/log/auth.log
+- /var/log/dnsrout/
+</code></pre></li>
+</ol>
+<p> 
+ </p>
+<h2 id="achivements-and-credits">Achivements and Credits</h2>
+<p>To test Honeytrack, we set it up live on Azure Cloud ☁️ and monitored attacks for 30 days which generated 1,000,000+ logs 📊. This provided a great insight on both - the tool as well as the emerging Cyberattacks throughout the world 🌎.</p>
+<p>After the successful tests, we collaborated with Cyberpeace Foundation through Department of Cybersecurity at Shah and Anchor Kutchhi Engineering College.</p>
+<p>This project was exhibited for the first CiiA Exhibition at Worli, Mumbai where Innovative projects were presented. The project also won 2nd 🥈 Prize at &ldquo;Technovation&rdquo; - National Paper Presentation Competition.</p>
+<p>An <a href="https://ieeexplore.ieee.org/document/10063105">IEEE Paper</a> Presentation and Publication at SCEECS 2023, MANIT, Bhopal and a Journal Publication by <a href="https://www.jetir.org/papers/JETIR2305F76.pdf">JEITR</a> are published.</p>
+<p> </p>
+<h3 id="honeytrack-was-my-2nd-year-engineering-mini-project">&ldquo;HoneyTrack&rdquo; was my 2nd year Engineering Mini Project</h3>
+<p>Collaborated with <a href="https://www.linkedin.com/in/vivek051/">Vivek Mishra</a>, <a href="https://www.linkedin.com/in/thejaymakwana/">Jay Makwana</a>, and <a href="https://www.linkedin.com/in/shrawani-js-pagar-382610215/">Shrawani Pagar</a>.</p>
+<p>Special Thanks to our mentors <a href="https://www.linkedin.com/in/dr-nilakshi-jain-7593a264/">Dr. Nilakshi Jain</a>, <a href="https://www.linkedin.com/in/dr-asha-durafe-56605836/">Dr. Asha Durafe</a>, <a href="https://www.linkedin.com/in/dr-shwetambari-borade-a05a113b/">Dr. Shwetambari Borade</a> and <a href="https://www.linkedin.com/in/cybervineet/">Maj. Vineet Kumar</a> for helping us with the Research and Funding. I&rsquo;d also like to thank our industrial mentors <a href="https://www.linkedin.com/in/ojas-dedhiya-16276ab4/">Ojas Dedia</a> and <a href="https://www.linkedin.com/in/pruthavjoshi/overlay/contact-info/">Pruthav Joshi</a> who showed us the right direction of implementing ElasticSearch with Core-HoneyTrack.</p>
+<p>Later, we demonstrated HoneyTrack and other uses of Elastic Search for Cybersecurity in the <a href="https://auti.dev/talk/elastic-cyber">Elastic Cyber Talk</a></p>
+
+</content>
+<p>
+  
+  <a href="https://auti.dev/blog/cybersecurity/">#cybersecurity</a>
+  
+  <a href="https://auti.dev/blog/honeypot/">#honeypot</a>
+  
+  <a href="https://auti.dev/blog/elasticsearch/">#elasticsearch</a>
+  
+  <a href="https://auti.dev/blog/purple-teaming/">#purple-teaming</a>
+  
+  <a href="https://auti.dev/blog/tools/">#tools</a>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>
