@@ -44,19 +44,37 @@ Our SIEM's strength lies in integration.
 
 ### Suricata
 
-Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities.
+Suricata isn't just any security tool; it's the sentinel that keeps a vigilant watch over your network. As a high-performance Network Intrusion Detection System (NIDS), Suricata boasts exceptional capabilities in identifying and thwarting potential threats traversing your network infrastructure.
+
+#### Integration
 
 ![Figure: Suricata Integration](https://auti.dev/images/blog/demystifying-elastic-siem/suricata-1.png)
 
+The integration of Suricata with Elasticsearch opens the doors to visualizing crucial security insights. Through the powerful visualization capabilities of Elastic SIEM, you gain a comprehensive view of Suricata's detections and alerts, empowering you to respond swiftly to potential threats.
+
+#### Dashboard
+
 ![Figure: Suricata Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/suricata-2.png)
+
+Real-Time Monitoring:
+
+The Suricata Dashboard serves as your real-time monitoring hub within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.
 
 ### Windows Sysmon 
 
-Windows Sysmon provides advanced system monitoring for Windows environments.
+Windows Sysmon, short for System Monitor, is a powerful, lightweight system utility developed by Microsoft, designed to monitor and log system activity. It provides detailed information about processes, network connections, file changes, registry modifications, and more, aiding in the detection of malicious activity and troubleshooting system issues.
+
+#### Integration
 
 ![Figure: Windows Sysmon Integration](https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-1.png)
 
+Sysmon operates by collecting event logs that record specific types of events related to process creation, network connections, file changes, and other activities on a Windows system. It can be configured to create detailed logs that contain information crucial for analyzing and investigating security incidents.
+
+#### Dashboard
+
 ![Figure: Windows Sysmon Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-2.png)
+
+The Sysmon Dashboard within Elastic SIEM acts as your centralized hub for real-time monitoring and analysis of Windows system activities. This user-friendly dashboard presents a clear and comprehensive view of Sysmon-generated logs and events, allowing for swift identification and response to potential security incidents.
 
 ## Decoding Conversations: Network Packet Capture
 

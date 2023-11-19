@@ -32,7 +32,7 @@
 <meta itemprop="name" content="Demystifying Elastic SIEM">
 <meta itemprop="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"><meta itemprop="datePublished" content="2023-10-17T12:35:53+05:30" />
 <meta itemprop="dateModified" content="2023-10-17T12:35:53+05:30" />
-<meta itemprop="wordCount" content="461"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="wordCount" content="697"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
 <meta itemprop="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -288,13 +288,22 @@
 <h2 id="building-the-arsenal-integrating-essential-tools">Building the Arsenal: Integrating Essential Tools</h2>
 <p>Our SIEM&rsquo;s strength lies in integration.</p>
 <h3 id="suricata">Suricata</h3>
-<p>Suricata, a high-performance Network IDS, stands guard against threats. Wazuh contributes with intrusion and vulnerability detection, adding SIEM capabilities.</p>
+<p>Suricata isn&rsquo;t just any security tool; it&rsquo;s the sentinel that keeps a vigilant watch over your network. As a high-performance Network Intrusion Detection System (NIDS), Suricata boasts exceptional capabilities in identifying and thwarting potential threats traversing your network infrastructure.</p>
+<h4 id="integration">Integration</h4>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/suricata-1.png" alt="Figure: Suricata Integration"></p>
+<p>The integration of Suricata with Elasticsearch opens the doors to visualizing crucial security insights. Through the powerful visualization capabilities of Elastic SIEM, you gain a comprehensive view of Suricata&rsquo;s detections and alerts, empowering you to respond swiftly to potential threats.</p>
+<h4 id="dashboard">Dashboard</h4>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/suricata-2.png" alt="Figure: Suricata Dashboard"></p>
+<p>Real-Time Monitoring:</p>
+<p>The Suricata Dashboard serves as your real-time monitoring hub within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.</p>
 <h3 id="windows-sysmon">Windows Sysmon</h3>
-<p>Windows Sysmon provides advanced system monitoring for Windows environments.</p>
+<p>Windows Sysmon, short for System Monitor, is a powerful, lightweight system utility developed by Microsoft, designed to monitor and log system activity. It provides detailed information about processes, network connections, file changes, registry modifications, and more, aiding in the detection of malicious activity and troubleshooting system issues.</p>
+<h4 id="integration-1">Integration</h4>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-1.png" alt="Figure: Windows Sysmon Integration"></p>
+<p>Sysmon operates by collecting event logs that record specific types of events related to process creation, network connections, file changes, and other activities on a Windows system. It can be configured to create detailed logs that contain information crucial for analyzing and investigating security incidents.</p>
+<h4 id="dashboard-1">Dashboard</h4>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-2.png" alt="Figure: Windows Sysmon Dashboard"></p>
+<p>The Sysmon Dashboard within Elastic SIEM acts as your centralized hub for real-time monitoring and analysis of Windows system activities. This user-friendly dashboard presents a clear and comprehensive view of Sysmon-generated logs and events, allowing for swift identification and response to potential security incidents.</p>
 <h2 id="decoding-conversations-network-packet-capture">Decoding Conversations: Network Packet Capture</h2>
 <p>Understanding digital conversations is key in the cyber realm. Network packet capture becomes our decoder, eavesdropping on these conversations to identify patterns and anomalies that may indicate security incidents.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/npc-1.png" alt="Figure: Network Packet Capture Integration"></p>
