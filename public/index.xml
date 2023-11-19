@@ -37,23 +37,5 @@ This talk is all about how one can leverage Cybersecurity and create awesome too
 HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://auti.dev/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://auti.dev/projects/</guid>
-      <description>Projects </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://auti.dev/talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://auti.dev/talk/</guid>
-      <description>Talk </description>
-    </item>
-    
   </channel>
 </rss>
