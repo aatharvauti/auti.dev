@@ -32,7 +32,7 @@
 <meta itemprop="name" content="Demystifying Elastic SIEM">
 <meta itemprop="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"><meta itemprop="datePublished" content="2023-10-17T12:35:53+05:30" />
 <meta itemprop="dateModified" content="2023-10-17T12:35:53+05:30" />
-<meta itemprop="wordCount" content="697"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="wordCount" content="762"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
 <meta itemprop="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -295,7 +295,7 @@
 <h4 id="dashboard">Dashboard</h4>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/suricata-2.png" alt="Figure: Suricata Dashboard"></p>
 <p>Real-Time Monitoring:</p>
-<p>The Suricata Dashboard serves as your real-time monitoring hub within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.</p>
+<p>The Suricata Dashboard serves as your real-time monitoring tool within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.</p>
 <h3 id="windows-sysmon">Windows Sysmon</h3>
 <p>Windows Sysmon, short for System Monitor, is a powerful, lightweight system utility developed by Microsoft, designed to monitor and log system activity. It provides detailed information about processes, network connections, file changes, registry modifications, and more, aiding in the detection of malicious activity and troubleshooting system issues.</p>
 <h4 id="integration-1">Integration</h4>
@@ -305,13 +305,15 @@
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/sysmon-2.png" alt="Figure: Windows Sysmon Dashboard"></p>
 <p>The Sysmon Dashboard within Elastic SIEM acts as your centralized hub for real-time monitoring and analysis of Windows system activities. This user-friendly dashboard presents a clear and comprehensive view of Sysmon-generated logs and events, allowing for swift identification and response to potential security incidents.</p>
 <h2 id="decoding-conversations-network-packet-capture">Decoding Conversations: Network Packet Capture</h2>
-<p>Understanding digital conversations is key in the cyber realm. Network packet capture becomes our decoder, eavesdropping on these conversations to identify patterns and anomalies that may indicate security incidents.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/npc-1.png" alt="Figure: Network Packet Capture Integration"></p>
+<p>Network Packet Capture plays a pivotal role in cybersecurity by providing granular visibility into network traffic. Integrating Elasticsearch within the cybersecurity framework empowers analysts to effectively manage, analyze, and derive insights from this captured network data.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/npc-2.png" alt="Figure: Network Packet Capture Dashboard"></p>
+<p>This integration not only enhances threat detection but also streamlines incident response and forensic investigations.</p>
 <h2 id="securing-the-web-apache-webserver">Securing the Web: Apache Webserver</h2>
-<p>Enter the Apache Webserver, a critical component in securing web environments. Its role is to scrutinize web traffic, offering protection against potential vulnerabilities and cyber threats.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-1.png" alt="Figure: Apache Web Server Integration"></p>
+<p>Apache web servers generate extensive logs containing valuable information about incoming requests, user interactions, errors, and potential security incidents. Integrating Apache logs with Elasticsearch fortifies cybersecurity analytics by consolidating these logs into a centralized platform for efficient storage, indexing, and analysis.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-2.png" alt="Figure: Apache Web Server Dashboard"></p>
+<p>The integration of Apache logs with Elasticsearch significantly enhances the capabilities of cybersecurity teams to detect, investigate, and respond to potential threats targeting web applications and server environments.</p>
 <h2 id="architectural-symphony-proxmox-and-debian-synergy">Architectural Symphony: Proxmox and Debian Synergy</h2>
 <p>In orchestrating this cybersecurity symphony, the Proxmox stack and Debian server containers take center stage. Their virtualization capabilities create a flexible and scalable environment, essential for adapting to the evolving cybersecurity landscape.</p>
 <p><img src="https://auti.dev/images/blog/demystifying-elastic-siem/pxmx-1.png" alt="Figure: Proxmox Dashboard"></p>

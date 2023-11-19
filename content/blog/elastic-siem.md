@@ -58,7 +58,7 @@ The integration of Suricata with Elasticsearch opens the doors to visualizing cr
 
 Real-Time Monitoring:
 
-The Suricata Dashboard serves as your real-time monitoring hub within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.
+The Suricata Dashboard serves as your real-time monitoring tool within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.
 
 ### Windows Sysmon 
 
@@ -78,26 +78,29 @@ The Sysmon Dashboard within Elastic SIEM acts as your centralized hub for real-t
 
 ## Decoding Conversations: Network Packet Capture
 
-Understanding digital conversations is key in the cyber realm. Network packet capture becomes our decoder, eavesdropping on these conversations to identify patterns and anomalies that may indicate security incidents.
-
 ![Figure: Network Packet Capture Integration](https://auti.dev/images/blog/demystifying-elastic-siem/npc-1.png)
+
+Network Packet Capture plays a pivotal role in cybersecurity by providing granular visibility into network traffic. Integrating Elasticsearch within the cybersecurity framework empowers analysts to effectively manage, analyze, and derive insights from this captured network data. 
 
 ![Figure: Network Packet Capture Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/npc-2.png)
 
-## Securing the Web: Apache Webserver
+This integration not only enhances threat detection but also streamlines incident response and forensic investigations.
 
-Enter the Apache Webserver, a critical component in securing web environments. Its role is to scrutinize web traffic, offering protection against potential vulnerabilities and cyber threats.
+## Securing the Web: Apache Webserver
 
 ![Figure: Apache Web Server Integration](https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-1.png)
 
+Apache web servers generate extensive logs containing valuable information about incoming requests, user interactions, errors, and potential security incidents. Integrating Apache logs with Elasticsearch fortifies cybersecurity analytics by consolidating these logs into a centralized platform for efficient storage, indexing, and analysis.
+
 ![Figure: Apache Web Server Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/apacheweb-2.png)
+
+The integration of Apache logs with Elasticsearch significantly enhances the capabilities of cybersecurity teams to detect, investigate, and respond to potential threats targeting web applications and server environments.
 
 ## Architectural Symphony: Proxmox and Debian Synergy
 
 In orchestrating this cybersecurity symphony, the Proxmox stack and Debian server containers take center stage. Their virtualization capabilities create a flexible and scalable environment, essential for adapting to the evolving cybersecurity landscape.
 
 ![Figure: Proxmox Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/pxmx-1.png)
-
 
 ## Conclusion: Empowering Cyber Defenses
 

@@ -233,6 +233,10 @@ The logs generated are stored in the logs database with a backup set as a cronjo
 
 To test Honeytrack, we set it up live on Azure Cloud ☁️ and monitored attacks for 30 days which generated 1,000,000+ logs 📊. This provided a great insight on both - the tool as well as the emerging Cyberattacks throughout the world 🌎.
 
+![](https://auti.dev/images/project/honeytrack/elk.png)
+
+&nbsp;
+
 After the successful tests, we collaborated with Cyberpeace Foundation through Department of Cybersecurity at Shah and Anchor Kutchhi Engineering College.
 
 This project was exhibited for the first CiiA Exhibition at Worli, Mumbai where Innovative projects were presented. The project also won 2nd 🥈 Prize at "Technovation" - National Paper Presentation Competition.
