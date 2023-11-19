@@ -32,7 +32,7 @@
 <meta itemprop="name" content="HoneyTrack">
 <meta itemprop="description" content="Honeypot with a twist of Red Teaming"><meta itemprop="datePublished" content="2023-08-19T14:28:54+05:30" />
 <meta itemprop="dateModified" content="2023-08-19T14:28:54+05:30" />
-<meta itemprop="wordCount" content="1332"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="wordCount" content="1326"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
 <meta itemprop="keywords" content="cybersecurity,honeypot,elasticsearch,purple-teaming,tools," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -233,29 +233,33 @@
     }
 
     a {
-    color: rgba(230, 52, 52, 0.75);
-    text-decoration: none;
-    position: relative;
-    transition: width 0.5s ease;
+        color: rgba(230, 52, 52, 0.75);
+        text-decoration: none;
+        position: relative;
+        transition: width 0.5s ease;
     }
 
     a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: rgb(230, 52, 52);
-    transition: width 0.5s ease;
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgb(230, 52, 52);
+        transition: width 0.5s ease;
     }
 
     a:hover {
-    color: rgba(230, 52, 52, 1);
-    transition: width 0.5s ease;
+        color: rgba(230, 52, 52, 1);
+        transition: width 0.5s ease;
     }
     a:hover::before {
-    width: 100%;  
+        width: 100%;  
+    }
+
+    .title:hover::before a {
+        width: 0%;  
     }
 
 </style></head>
@@ -281,8 +285,8 @@
 <content>
   <h1 id="honeypot-with-a-twist-of-red-teaming">Honeypot with a twist of <strong>Red Teaming</strong></h1>
 <p><img src="https://auti.dev/images/project/honeytrack/Header.png" alt=""></p>
-<p>With the tremendous growth of <strong>cyber-attacks</strong>, the loss of private or sensitive data has risen to a peak ☠️. Honeypots are one of the most concerned topics in the field of cyber security currently.</p>
-<p>HoneyTrack is a <strong>honeypot</strong> 🍯 cum <strong>SIEM tool</strong> 📊 that uses various technologies like <strong>Docker</strong> 🐋, <strong>Shell</strong> 🐚 Scripts, <strong>Python</strong> 🐍, <strong>Elastic Search</strong> 🔍, <strong>Kibana</strong> 📈, and <strong>Filebeat</strong> 📂 which protect an organization&rsquo;s database as well it backtracks the hacker when it intrudes the target network.  </p>
+<p>With the tremendous growth of <strong>cyber-attacks</strong>, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.</p>
+<p>HoneyTrack is a <strong>honeypot</strong> cum <strong>SIEM tool</strong> that uses various technologies like <strong>Docker</strong>, <strong>Shell</strong> Scripts, <strong>Python</strong>, <strong>Elastic Search</strong> 🔍, <strong>Kibana</strong> 📈, and <strong>Filebeat</strong> 📂 which protect an organization&rsquo;s database as well it backtracks the hacker when it intrudes the target network.  </p>
 <p>Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.</p>
 <p>However, this honeypot is like a traditional honeypot but quite updated with <strong>new-generation technology</strong> 🚀 and their needs related to cyber-security.  </p>
 <p><img src="https://auti.dev/images/project/honeytrack/elk.gif" alt=""></p>

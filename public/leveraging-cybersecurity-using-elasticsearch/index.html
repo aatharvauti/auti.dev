@@ -233,29 +233,33 @@
     }
 
     a {
-    color: rgba(230, 52, 52, 0.75);
-    text-decoration: none;
-    position: relative;
-    transition: width 0.5s ease;
+        color: rgba(230, 52, 52, 0.75);
+        text-decoration: none;
+        position: relative;
+        transition: width 0.5s ease;
     }
 
     a::before {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: rgb(230, 52, 52);
-    transition: width 0.5s ease;
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgb(230, 52, 52);
+        transition: width 0.5s ease;
     }
 
     a:hover {
-    color: rgba(230, 52, 52, 1);
-    transition: width 0.5s ease;
+        color: rgba(230, 52, 52, 1);
+        transition: width 0.5s ease;
     }
     a:hover::before {
-    width: 100%;  
+        width: 100%;  
+    }
+
+    .title:hover::before a {
+        width: 0%;  
     }
 
 </style></head>
