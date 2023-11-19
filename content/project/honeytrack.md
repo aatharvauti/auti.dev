@@ -5,7 +5,7 @@ draft: true
 ---
 
 
-![](../documentation/Header.png)
+![](https://auti.dev/images/project/honeytrack/Header.png)
 
 ## Honeypot with a twist of **Red Teaming**
 ---
@@ -16,14 +16,14 @@ With the tremendous growth of **cyber-attacks**, the loss of private or sensitiv
 HoneyTrack is a **honeypot** 🍯 cum **SIEM tool** 📊 that uses various technologies like **Docker** 🐋, **Shell** 🐚 Scripts, **Python** 🐍, **Elastic Search** 🔍, **Kibana** 📈, and **Filebeat** 📂 which protect an organization's database as well it backtracks the hacker when it intrudes the target network. &nbsp;
 
 
-![](../documentation/globe.gif)
+![](https://auti.dev/images/project/honeytrack/globe.gif)
 
 
 Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker 💀. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.
 
 However, this honeypot is like a traditional honeypot but quite updated with **new-generation technology** 🚀 and their needs related to cyber-security. &nbsp;
 
-![](../documentation/elk.gif)
+![](https://auti.dev/images/project/honeytrack/elk.gif)
 
 ## Methodology
 
@@ -35,7 +35,7 @@ Later, **python** 🐍 codes were developed to build the honeypot and set all it
 
 Check out other repositories at [github/HoneyTrack](https://github.com/HoneyTrack)
 
-![](../documentation/1.png)
+![](https://auti.dev/images/project/honeytrack/1.png)
 Fig. Local Network Architecture (On ORACLE Virtual Box)
 
 The figure above represents a testing diagram used to demonstrate HoneyTrack on Local Networks in Oracle VirtualBox.
@@ -44,7 +44,7 @@ Any request outside of the network must pass through the firewall. There are cer
 
 &nbsp;
 
-![](../documentation/2.png)
+![](https://auti.dev/images/project/honeytrack/2.png)
 Fig. Data Flow Diagram
 
 The figure above represents the data flow or application flow diagram of HoneyTrack.
@@ -91,7 +91,7 @@ The logs generated are stored in the logs database with a backup set as a cronjo
 
 &nbsp;
 
-![](../documentation/3.png)
+![](https://auti.dev/images/project/honeytrack/3.png)
 
 
 5. Docker Internal Configuration
@@ -247,4 +247,4 @@ An [IEEE Paper](https://ieeexplore.ieee.org/document/10063105) Presentation and 
 
 I'd also like to thank our industrial mentors [Ojas Dedia](https://www.linkedin.com/in/ojas-dedhiya-16276ab4/) and [Pruthav Joshi](https://www.linkedin.com/in/pruthavjoshi/overlay/contact-info/) who showed us the right direction of implementing ElasticSearch with Core-HoneyTrack.
 
-Later, we demonstrated HoneyTrack and other uses of Elastic Search for Cybersecurity in the [Elastic Cyber Talk](../../talks/elastic-cyber)
+Later, we demonstrated HoneyTrack and other uses of Elastic Search for Cybersecurity in the [Elastic Cyber Talk](https://auti.dev/talk/elastic-cyber)
