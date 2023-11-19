@@ -56,9 +56,7 @@ The integration of Suricata with Elasticsearch opens the doors to visualizing cr
 
 ![Figure: Suricata Dashboard](https://auti.dev/images/blog/demystifying-elastic-siem/suricata-2.png)
 
-Real-Time Monitoring:
-
-The Suricata Dashboard serves as your real-time monitoring tool within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.
+Real-Time Monitoring: The Suricata Dashboard serves as your real-time monitoring tool within the Elastic SIEM environment. It offers an intuitive interface presenting live data, alerts, and critical events detected by Suricata. This visual representation simplifies the process of identifying and responding to security incidents promptly.
 
 ### Windows Sysmon 
 
