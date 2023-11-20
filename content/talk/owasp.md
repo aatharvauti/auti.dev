@@ -7,7 +7,7 @@ date = "2023-02-15T12:22:44+05:30"
 tags = ["owasp", "cybersecurity", "red-teaming", "web-security" ]
 +++
 
-#### First talk on 14th October 2023, at Elastic Community Event, Mumbai
+#### First talk on 15th February 2023, as a guest lecture on Ethical Hacking and Digital Forensics
 
 [Presentation: docs.google.com](https://docs.google.com/presentation/d/e/2PACX-1vS7FoYTZGK5DQp8c-mszPQHpeaJS-W1ZmwZ8Mm1DjAAqilAiVlBC26Q9byUOS-H3t8vny8AsnBoLA_p/embed?start=false&loop=false#slide=id.p)
 
