@@ -21,6 +21,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   blog = "/:slug/"
   talk = "/:slug/"
   project = "/:slug/"
+  compromising-ad = "/:slug/"
   tags = "/blog/:slug"
 
 [params]

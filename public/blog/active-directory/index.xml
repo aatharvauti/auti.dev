@@ -1,52 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>auti.dev   ≽^._.^≼ ∫</title>
-    <link>https://auti.dev/</link>
-    <description>Recent content on auti.dev   ≽^._.^≼ ∫</description>
+    <title>active-directory on auti.dev   ≽^._.^≼ ∫</title>
+    <link>https://auti.dev/blog/active-directory/</link>
+    <description>Recent content in active-directory on auti.dev   ≽^._.^≼ ∫</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Tue, 17 Oct 2023 12:35:53 +0530</lastBuildDate><atom:link href="https://auti.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Demystifying Elastic SIEM</title>
-      <link>https://auti.dev/demystifying-elastic-siem/</link>
-      <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
-      
-      <guid>https://auti.dev/demystifying-elastic-siem/</guid>
-      <description>Introduction Hey there! Following my recent presentation at the Elastic Community Event, I&amp;rsquo;m thrilled to extend the insights into setting up Elastic for cybersecurity tools. In this blog, we&amp;rsquo;ll take a hands-on approach, providing a detailed guide on leveraging Elasticsearch and its toolkit. Our focus? Building a robust Security Information and Event Management (SIEM) tool, seamlessly incorporating Suricata, Wazuh, Windows Sysmon, network packet capture, and Apache Webserver. All of this orchestrated within the dependable Proxmox stack and Debian server containers.</description>
-    </item>
-    
-    <item>
-      <title>Leveraging Cybersecurity using ElasticSearch</title>
-      <link>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</link>
-      <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
-      
-      <guid>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</guid>
-      <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com
-This talk is all about how one can leverage Cybersecurity and create awesome tools and integrations using ElasticSearch&amp;rsquo;s builtin integrations. These integrations can be used with pre-existing open source as well as proprietary Cybersecurity tools like Suricata, Snort, etc. Not only specialized cybersecurity tools, but also Apache Web Server integration that can monitor an Apache2 instance for access and error logs.</description>
-    </item>
-    
-    <item>
-      <title>HoneyTrack</title>
-      <link>https://auti.dev/honeytrack/</link>
-      <pubDate>Sat, 19 Aug 2023 14:28:54 +0530</pubDate>
-      
-      <guid>https://auti.dev/honeytrack/</guid>
-      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.
-HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
-    </item>
-    
-    <item>
-      <title>OWASP Top 10</title>
-      <link>https://auti.dev/owasp-top-10/</link>
-      <pubDate>Wed, 15 Feb 2023 12:22:44 +0530</pubDate>
-      
-      <guid>https://auti.dev/owasp-top-10/</guid>
-      <description>First talk on 15th February 2023, as a guest lecture on Ethical Hacking and Digital Forensics Presentation: docs.google.com
-I had the privilege of presenting a talk at SAKEC, Mumbai University, diving deep into the intricate workings of web applications while shedding light on the critical vulnerabilities outlined in the OWASP top 10. Through interactive demonstrations, I explained the underlying mechanics of web applications and elucidated strategies to mitigate these vulnerabilities, empowering the audience with actionable insights to secure their web applications.</description>
-    </item>
-    
+    <lastBuildDate>Tue, 17 Aug 2021 12:35:53 +0530</lastBuildDate><atom:link href="https://auti.dev/blog/active-directory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Compromising AD - Part 4: Post Exploitation</title>
       <link>https://auti.dev/compromising-ad-part-4-post-exploitation/</link>

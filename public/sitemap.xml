@@ -56,5 +56,23 @@
   </url><url>
     <loc>https://auti.dev/blog/web-security/</loc>
     <lastmod>2023-02-15T12:22:44+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/active-directory/</loc>
+    <lastmod>2021-08-17T12:35:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/compromising-ad-part-4-post-exploitation/</loc>
+    <lastmod>2021-08-17T12:35:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/windows/</loc>
+    <lastmod>2021-08-17T12:35:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/compromising-ad-part-3-post-compromise-attacks/</loc>
+    <lastmod>2021-08-16T12:35:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/compromising-ad-part-2-post-compromise-enumeration/</loc>
+    <lastmod>2021-08-15T12:37:53+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</loc>
+    <lastmod>2021-08-15T12:35:53+05:30</lastmod>
   </url>
 </urlset>
