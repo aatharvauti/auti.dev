@@ -17,7 +17,7 @@ This talk is all about how one can **leverage Cybersecurity** and create awesome
 
 ### Credits
 
-This was my first talk at a public community event led by a company. I'd like to thank [Ashish Tiwari](ashish.one) for the opportunity. He came across [this LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7075033327472152576/) and offered us the stage to showcase our project (by which I was absolutely stunned!).
+This was my first talk at a public community event led by a company. I'd like to thank [Ashish Tiwari](ashish.one) for the opportunity. He came across [this LinkedIn post](https://www.linkedin.com/feed/update/urn:li:activity:7075033327472152576/) and offered us the stage to showcase our project.
 
 **"HoneyTrack"** was my 2nd year Engineering Mini Project, collaborated with [Vivek Mishra](https://www.linkedin.com/in/vivek051/), [Jay Makwana](https://www.linkedin.com/in/thejaymakwana/), and [Shrawani Pagar](https://www.linkedin.com/in/shrawani-js-pagar-382610215/).
 

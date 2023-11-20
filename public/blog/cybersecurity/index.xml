@@ -37,5 +37,15 @@ This talk is all about how one can leverage Cybersecurity and create awesome too
 HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
     
+    <item>
+      <title>OWASP Top 10</title>
+      <link>https://auti.dev/owasp-top-10/</link>
+      <pubDate>Wed, 15 Feb 2023 12:22:44 +0530</pubDate>
+      
+      <guid>https://auti.dev/owasp-top-10/</guid>
+      <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com
+I had the privilege of presenting a talk at Shah &amp;amp; Anchor Kutchhi Engineering College, Mumbai University, diving deep into the intricate workings of web applications while shedding light on the critical vulnerabilities outlined in the OWASP top 10. Through interactive demonstrations, I explained the underlying mechanics of web applications and elucidated strategies to mitigate these vulnerabilities, empowering the audience with actionable insights to fortify their digital fortresses.</description>
+    </item>
+    
   </channel>
 </rss>

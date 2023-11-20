@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>red-teaming on auti.dev   ≽^._.^≼ ∫</title>
+    <link>https://auti.dev/blog/red-teaming/</link>
+    <description>Recent content in red-teaming on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Wed, 15 Feb 2023 12:22:44 +0530</lastBuildDate><atom:link href="https://auti.dev/blog/red-teaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OWASP Top 10</title>
+      <link>https://auti.dev/owasp-top-10/</link>
+      <pubDate>Wed, 15 Feb 2023 12:22:44 +0530</pubDate>
+      
+      <guid>https://auti.dev/owasp-top-10/</guid>
+      <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com
+I had the privilege of presenting a talk at Shah &amp;amp; Anchor Kutchhi Engineering College, Mumbai University, diving deep into the intricate workings of web applications while shedding light on the critical vulnerabilities outlined in the OWASP top 10. Through interactive demonstrations, I explained the underlying mechanics of web applications and elucidated strategies to mitigate these vulnerabilities, empowering the audience with actionable insights to fortify their digital fortresses.</description>
+    </item>
+    
+  </channel>
+</rss>
