@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://auti.dev/images/favicon/favicon.ico" />
+<title>Useful AD Resources | auti.dev   ≽^._.^≼ ∫</title>
+<meta name="title" content="Useful AD Resources" />
+<meta name="description" content="Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
+Mitm6: https://github.com/fox-it/mitm6
+Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
+Mimikatz: https://github.com/gentilkiwi/mimikatz
+PRET: https://github.com/RUB-NDS/PRET
+Praeda: https://github.com/percx/Praeda
+SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
+LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
+cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
+calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
+Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
+mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
+GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/" />
+<meta name="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
+
+
+<meta property="og:title" content="Useful AD Resources" />
+<meta property="og:description" content="Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
+Mitm6: https://github.com/fox-it/mitm6
+Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
+Mimikatz: https://github.com/gentilkiwi/mimikatz
+PRET: https://github.com/RUB-NDS/PRET
+Praeda: https://github.com/percx/Praeda
+SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
+LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
+cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
+calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
+Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
+mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
+GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://auti.dev/useful-ad-resources/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2021-08-20T12:35:53+05:30" />
+<meta property="article:modified_time" content="2021-08-20T12:35:53+05:30" /><meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://auti.dev/images/share.png"/>
+
+<meta name="twitter:title" content="Useful AD Resources"/>
+<meta name="twitter:description" content="Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
+Mitm6: https://github.com/fox-it/mitm6
+Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
+Mimikatz: https://github.com/gentilkiwi/mimikatz
+PRET: https://github.com/RUB-NDS/PRET
+Praeda: https://github.com/percx/Praeda
+SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
+LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
+cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
+calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
+Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
+mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
+GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/"/>
+
+
+
+<meta itemprop="name" content="Useful AD Resources">
+<meta itemprop="description" content="Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
+Mitm6: https://github.com/fox-it/mitm6
+Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
+Mimikatz: https://github.com/gentilkiwi/mimikatz
+PRET: https://github.com/RUB-NDS/PRET
+Praeda: https://github.com/percx/Praeda
+SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
+LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
+cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
+calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
+Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
+mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
+GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/"><meta itemprop="datePublished" content="2021-08-20T12:35:53+05:30" />
+<meta itemprop="dateModified" content="2021-08-20T12:35:53+05:30" />
+<meta itemprop="wordCount" content="95"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+    padding: 10px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+    font-family: 'Fira Code', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Cascadia Code', Courier, monospace;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: rgba(230, 52, 52, 0.75);
+;
+  }
+
+   
+
+</style>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+<style>
+
+     
+     
+     
+     
+     
+     
+
+    body {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    h2 {
+        font-weight: 800;
+    }
+
+    h3 {
+        font-weight: 700;
+    }
+
+    h4 {
+        font-weight: 600;
+    }
+
+    a {
+        color: rgba(230, 52, 52, 0.75);
+        text-decoration: none;
+        position: relative;
+        transition: width 0.5s ease;
+    }
+
+    a::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: rgb(230, 52, 52);
+        transition: width 0.5s ease;
+    }
+
+    a:hover {
+        color: rgba(230, 52, 52, 1);
+        transition: width 0.5s ease;
+    }
+    a:hover::before {
+        width: 100%;  
+    }
+
+    .title:hover::before {
+        width: 0% !important;
+    }
+
+    .iframe-container {
+        display: flex;
+        align-items: center;
+    }
+
+</style></head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>auti.dev   ≽^._.^≼ ∫</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/talk">Talks</a>
+
+
+<a href="/project">Projects</a>
+</nav>
+</header>
+  <main>
+
+<h1>Useful AD Resources</h1>
+<p>
+  <i>
+    <time datetime='2021-08-20' pubdate>
+      20 Aug, 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  <h1 id="downloads-and-tools">Downloads and Tools</h1>
+<hr>
+<ul>
+<li>
+<p>Impacket Tools: <a href="https://github.com/SecureAuthCorp/impacket/releases">https://github.com/SecureAuthCorp/impacket/releases</a></p>
+</li>
+<li>
+<p>Mitm6: <a href="https://github.com/fox-it/mitm6">https://github.com/fox-it/mitm6</a></p>
+</li>
+<li>
+<p>Powerview: <a href="https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView">https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView</a></p>
+</li>
+<li>
+<p>Sharphound: <a href="https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1">https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1</a></p>
+</li>
+<li>
+<p>Mimikatz: <a href="https://github.com/gentilkiwi/mimikatz">https://github.com/gentilkiwi/mimikatz</a></p>
+</li>
+<li>
+<p>PRET: <a href="https://github.com/RUB-NDS/PRET">https://github.com/RUB-NDS/PRET</a></p>
+</li>
+<li>
+<p>Praeda: <a href="https://github.com/percx/Praeda">https://github.com/percx/Praeda</a></p>
+</li>
+<li>
+<p>SYSVOL Script: (<a href="https://support.microsoft.com/en-us/kb/2962486">https://support.microsoft.com/en-us/kb/2962486</a>)</p>
+</li>
+<li>
+<p>LAPS: (<a href="https://www.microsoft.com/en-us/download/details.aspx?id=46899">https://www.microsoft.com/en-us/download/details.aspx?id=46899)</a>)</p>
+</li>
+<li>
+<p>cube0x0 RCE: <a href="https://github.com/cube0x0/CVE-2021-1675">https://github.com/cube0x0/CVE-2021-1675</a></p>
+</li>
+<li>
+<p>calebstewart LPE: <a href="https://github.com/calebstewart/CVE-2021-1675">https://github.com/calebstewart/CVE-2021-1675</a></p>
+</li>
+</ul>
+<br>
+<h1 id="articles-and-blogs">Articles and Blogs</h1>
+<hr>
+<ul>
+<li>
+<p>Top 5 ways I got Domain: <a href="https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa">https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa</a></p>
+</li>
+<li>
+<p>Account tiering:
+<a href="https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/">https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/</a></p>
+</li>
+<li>
+<p>mitm6: <a href="https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/">https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/</a></p>
+</li>
+<li>
+<p>Combining NTLM Relays and Kerberos Delegation: <a href="https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/">https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/</a></p>
+</li>
+<li>
+<p>Hacking Printers Cheatsheet: <a href="https://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet">http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet</a></p>
+</li>
+<li>
+<p>A Pen Tester’s Guide to Printer Hacking: <a href="https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/">https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/</a></p>
+</li>
+<li>
+<p>Bypass Antivirus: <a href="https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html">https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html</a></p>
+</li>
+<li>
+<p>GPP cPassword Attack: <a href="https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/">https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/</a></p>
+</li>
+<li>
+<p>SCF Attack: <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share">https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#scf-and-url-file-attack-against-writeable-share</a></p>
+</li>
+<li>
+<p>Active Directory Security Blog: <a href="https://adsecurity.org/">https://adsecurity.org/</a></p>
+</li>
+<li>
+<p>Harmj0y Blog: <a href="http://blog.harmj0y.net/">http://blog.harmj0y.net/</a></p>
+</li>
+<li>
+<p>Pentester Academy Active Directory: <a href="https://www.pentesteracademy.com/activedirectorylab">https://www.pentesteracademy.com/activedirectorylab</a></p>
+</li>
+<li>
+<p>Pentester Academy Red Team Labs: <a href="https://www.pentesteracademy.com/redteamlab">https://www.pentesteracademy.com/redteamlab</a></p>
+</li>
+<li>
+<p>eLS PTX: <a href="https://elearnsecurity.com/product/ecptx-certification/">https://elearnsecurity.com/product/ecptx-certification/</a></p>
+</li>
+</ul>
+
+</content>
+<p>
+  
+  <a href="https://auti.dev/blog/active-directory/">#active-directory</a>
+  
+  <a href="https://auti.dev/blog/cybersecurity/">#cybersecurity</a>
+  
+  <a href="https://auti.dev/blog/windows/">#windows</a>
+  
+  <a href="https://auti.dev/blog/red-teaming/">#red-teaming</a>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>

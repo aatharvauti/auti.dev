@@ -6,6 +6,17 @@ date = "2021-08-15T12:35:53+05:30"
 tags = ["active-directory", "cybersecurity", "windows", "red-teaming"]
 +++
 
+# Introduction
+
+---
+
+In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization's infrastructure. 
+
+Yet, as the heartbeat of user authentication and authorization, it  presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense. 
+
+Delving deep into the nuances of AD security, we'll navigate through the anatomy of attacks, explore the methods utilized by threat actors, and unveil comprehensive mitigation techniques that empower organizations to safeguard their AD infrastructure against sophisticated attacks.
+
+
 # Initial Attack Vectors
 
 ---

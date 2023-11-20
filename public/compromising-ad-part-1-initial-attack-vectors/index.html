@@ -8,12 +8,14 @@
 <link rel="shortcut icon" href="https://auti.dev/images/favicon/favicon.ico" />
 <title>Compromising AD - Part 1: Initial Attack Vectors | auti.dev   ≽^._.^≼ ∫</title>
 <meta name="title" content="Compromising AD - Part 1: Initial Attack Vectors" />
-<meta name="description" content="Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher." />
+<meta name="description" content="Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&rsquo;s infrastructure.
+Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense." />
 <meta name="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
 
 
 <meta property="og:title" content="Compromising AD - Part 1: Initial Attack Vectors" />
-<meta property="og:description" content="Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher." />
+<meta property="og:description" content="Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&rsquo;s infrastructure.
+Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://auti.dev/compromising-ad-part-1-initial-attack-vectors/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-08-15T12:35:53+05:30" />
@@ -25,14 +27,16 @@
 <meta name="twitter:image" content="https://auti.dev/images/share.png"/>
 
 <meta name="twitter:title" content="Compromising AD - Part 1: Initial Attack Vectors"/>
-<meta name="twitter:description" content="Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher."/>
+<meta name="twitter:description" content="Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&rsquo;s infrastructure.
+Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense."/>
 
 
 
 <meta itemprop="name" content="Compromising AD - Part 1: Initial Attack Vectors">
-<meta itemprop="description" content="Initial Attack Vectors Initial Attack Vectors - Reference Article: - Install Impacket Tools LLMNR-Poisoning - LMNR: Link Local Multicast Name Resolution (Used to Identify hosts when DNS fails) Defense Against LLMNR Poisoning SMB-Relay-Attacks What is SMB Relay? Requirements Setup Defense Against SMB Relay IPv6-Attacks Resources Requirements Setup Defense Against IPv6 Attacks Passback-Attacks Introducing the Pass-Back Attack Accessing the EWS Replace LDAP Attributes Capture Credentials Attacking SMTP and Windows Sign-in Resources Strategies Reference Article https://adam-toscher."><meta itemprop="datePublished" content="2021-08-15T12:35:53+05:30" />
+<meta itemprop="description" content="Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&rsquo;s infrastructure.
+Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense."><meta itemprop="datePublished" content="2021-08-15T12:35:53+05:30" />
 <meta itemprop="dateModified" content="2021-08-15T12:35:53+05:30" />
-<meta itemprop="wordCount" content="1641"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
+<meta itemprop="wordCount" content="1758"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
 <meta itemprop="keywords" content="active-directory,cybersecurity,windows,red-teaming," />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -269,7 +273,12 @@
 </p>
 
 <content>
-  <h1 id="initial-attack-vectors">Initial Attack Vectors</h1>
+  <h1 id="introduction">Introduction</h1>
+<hr>
+<p>In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&rsquo;s infrastructure.</p>
+<p>Yet, as the heartbeat of user authentication and authorization, it  presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense.</p>
+<p>Delving deep into the nuances of AD security, we&rsquo;ll navigate through the anatomy of attacks, explore the methods utilized by threat actors, and unveil comprehensive mitigation techniques that empower organizations to safeguard their AD infrastructure against sophisticated attacks.</p>
+<h1 id="initial-attack-vectors">Initial Attack Vectors</h1>
 <hr>
 <ul>
 <li><a href="#initial-attack-vectors">Initial Attack Vectors</a>
