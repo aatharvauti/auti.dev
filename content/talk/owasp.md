@@ -11,7 +11,7 @@ tags = ["owasp", "cybersecurity", "red-teaming", "web-security" ]
 
 [Presentation: docs.google.com](https://docs.google.com/presentation/d/e/2PACX-1vS7FoYTZGK5DQp8c-mszPQHpeaJS-W1ZmwZ8Mm1DjAAqilAiVlBC26Q9byUOS-H3t8vny8AsnBoLA_p/embed?start=false&loop=false#slide=id.p)
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS7FoYTZGK5DQp8c-mszPQHpeaJS-W1ZmwZ8Mm1DjAAqilAiVlBC26Q9byUOS-H3t8vny8AsnBoLA_p/embed?start=false&loop=false" frameborder="0" width="100%" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS7FoYTZGK5DQp8c-mszPQHpeaJS-W1ZmwZ8Mm1DjAAqilAiVlBC26Q9byUOS-H3t8vny8AsnBoLA_p/embed?start=false&loop=false" frameborder="0" width="100%" height="441" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 I had the privilege of presenting a talk at SAKEC, **Mumbai University**, diving deep into the intricate workings of web applications while shedding light on the critical vulnerabilities outlined in the OWASP top 10. Through interactive demonstrations, I explained the **underlying mechanics of web applications** and elucidated **strategies to mitigate** these vulnerabilities, empowering the audience with actionable insights to secure their web applications. This engaging session fostered a deeper understanding of cybersecurity principles and the proactive measures required to safeguard digital assets in today's interconnected landscape.
 

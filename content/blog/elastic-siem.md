@@ -36,7 +36,7 @@ On my personal setup, I created a docker container on a Proxmox LXC which you ca
 
 We'll learn to add an integration for an Apache2 Web Server Monitoring for a client machine using the Standalone Elastic Agent method.
 
-<iframe style="align: center" src="https://docs.google.com/presentation/d/e/2PACX-1vR_cUt2Yd1uTqRjYLFaPDMHoc0reBWPF_BYg6Ns1_NH2HEszQGHquApPaxWYWGRqYYmgq8OWcKYq2XP/embed?start=false&loop=false" frameborder="0" width="100%" height="345" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe style="align: center" src="https://docs.google.com/presentation/d/e/2PACX-1vR_cUt2Yd1uTqRjYLFaPDMHoc0reBWPF_BYg6Ns1_NH2HEszQGHquApPaxWYWGRqYYmgq8OWcKYq2XP/embed?start=false&loop=false" frameborder="0" width="100%" height="441" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## Building the Arsenal: Integrating Essential Tools
 
