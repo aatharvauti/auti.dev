@@ -7,7 +7,7 @@ date = "2023-08-19T14:28:54+05:30"
 tags = ["cybersecurity", "honeypot", "elasticsearch", "purple-teaming", "tools"]
 +++
 
-# Honeypot with a twist of **Red Teaming**
+# Honeypot with a twist of Red Teaming
 
 ![](https://auti.dev/images/project/honeytrack/Header.png)
 
