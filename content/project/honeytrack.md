@@ -13,7 +13,6 @@ tags = ["cybersecurity", "honeypot", "elasticsearch", "purple-teaming", "tools"]
 
 With the tremendous growth of **cyber-attacks**, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.
 
-
 HoneyTrack is a **honeypot** cum **SIEM tool** that uses various technologies like **Docker**, **Shell** Scripts, **Python**, **Elastic Search** 🔍, **Kibana** 📈, and **Filebeat** 📂 which protect an organization's database as well it backtracks the hacker when it intrudes the target network. &nbsp;
 
 Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.
