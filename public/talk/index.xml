@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Tue, 17 Oct 2023 12:35:53 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 15 Jun 2024 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://auti.dev/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Security Basics</title>
+      <link>https://auti.dev/cloud-security-basics/</link>
+      <pubDate>Sat, 15 Jun 2024 12:00:00 +0530</pubDate>
+      <guid>https://auti.dev/cloud-security-basics/</guid>
+      <description>First seminar on 24th June 2024, as a seminar at Mumbai University Presentation: docs.google.com&#xA;I had the honor of delivering a talk at SAKEC, Mumbai University, where I introduced the fundamental concepts of cloud computing. This session delved into the core principles of cloud architecture, service models, and deployment strategies, providing a comprehensive overview of how cloud technology is transforming the IT landscape. Through practical examples and real-world scenarios, I highlighted the benefits of cloud adoption and discussed the key considerations for securing cloud environments.</description>
+    </item>
     <item>
       <title>Leveraging Cybersecurity using ElasticSearch</title>
       <link>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</link>

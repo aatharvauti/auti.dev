@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud on auti.dev   ≽^._.^≼ ∫</title>
+    <link>https://auti.dev/blog/cloud/</link>
+    <description>Recent content in Cloud on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Sat, 15 Jun 2024 12:00:00 +0530</lastBuildDate>
+    <atom:link href="https://auti.dev/blog/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Security Basics</title>
+      <link>https://auti.dev/cloud-security-basics/</link>
+      <pubDate>Sat, 15 Jun 2024 12:00:00 +0530</pubDate>
+      <guid>https://auti.dev/cloud-security-basics/</guid>
+      <description>First seminar on 24th June 2024, as a seminar at Mumbai University Presentation: docs.google.com&#xA;I had the honor of delivering a talk at SAKEC, Mumbai University, where I introduced the fundamental concepts of cloud computing. This session delved into the core principles of cloud architecture, service models, and deployment strategies, providing a comprehensive overview of how cloud technology is transforming the IT landscape. Through practical examples and real-world scenarios, I highlighted the benefits of cloud adoption and discussed the key considerations for securing cloud environments.</description>
+    </item>
+  </channel>
+</rss>

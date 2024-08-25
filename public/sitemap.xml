@@ -3,15 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://auti.dev/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
-  </url><url>
-    <loc>https://auti.dev/blog/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/blue-teaming/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/cloud/</loc>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/cloud-security-basics/</loc>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/cybersecurity/</loc>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/talk/</loc>
+    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/demystifying-elastic-siem/</loc>
@@ -24,9 +33,6 @@
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/siem-soc/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
-  </url><url>
-    <loc>https://auti.dev/talk/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/tools/</loc>
