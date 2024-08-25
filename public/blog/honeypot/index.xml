@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>honeypot on auti.dev   ≽^._.^≼ ∫</title>
+    <title>Honeypot on auti.dev   ≽^._.^≼ ∫</title>
     <link>https://auti.dev/blog/honeypot/</link>
-    <description>Recent content in honeypot on auti.dev   ≽^._.^≼ ∫</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Honeypot on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Sat, 19 Aug 2023 14:28:54 +0530</lastBuildDate><atom:link href="https://auti.dev/blog/honeypot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Aug 2023 14:28:54 +0530</lastBuildDate>
+    <atom:link href="https://auti.dev/blog/honeypot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HoneyTrack</title>
       <link>https://auti.dev/honeytrack/</link>
       <pubDate>Sat, 19 Aug 2023 14:28:54 +0530</pubDate>
-      
       <guid>https://auti.dev/honeytrack/</guid>
-      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.
-HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
+      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.&#xA;HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
-    
   </channel>
 </rss>

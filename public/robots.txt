@@ -1,2 +1,1 @@
-User-Agent: *
-Sitemap: https://auti.dev/sitemap.xml
+User-agent: *
