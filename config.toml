@@ -19,8 +19,8 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
   blog = "/:slug/"
-  talk = "/:slug/"
-  project = "/:slug/"
+  talks = "/:slug/"
+  projects = "/:slug/"
   compromising-ad = "/:slug/"
   tags = "/blog/:slug"
 
@@ -38,7 +38,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   # https://gohugo.io/templates/internal#open-graph.
   images = ["images/share.png"]
 
-  # Another "title" :-). This one is used as the site_name on the Hugo's internal
+  # Another "title". This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
   title = "auti.dev   ≽^._.^≼ ∫"

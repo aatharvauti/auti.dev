@@ -12,35 +12,47 @@
 <meta name="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
 
 
-<meta property="og:title" content="Demystifying Elastic SIEM" />
-<meta property="og:description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://auti.dev/demystifying-elastic-siem/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-10-17T12:35:53+05:30" />
-<meta property="article:modified_time" content="2023-10-17T12:35:53+05:30" /><meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫" />
+<meta property="og:url" content="https://auti.dev/demystifying-elastic-siem/">
+  <meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫">
+  <meta property="og:title" content="Demystifying Elastic SIEM">
+  <meta property="og:description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2023-10-17T12:35:53+05:30">
+    <meta property="article:modified_time" content="2023-10-17T12:35:53+05:30">
+    <meta property="article:tag" content="Elasticsearch">
+    <meta property="article:tag" content="Cybersecurity">
+    <meta property="article:tag" content="Siem-Soc">
+    <meta property="article:tag" content="Blue-Teaming">
+    <meta property="article:tag" content="Tools">
+    <meta property="og:image" content="https://auti.dev/images/share.png">
 
 
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://auti.dev/images/share.png"/>
 
-<meta name="twitter:title" content="Demystifying Elastic SIEM"/>
-<meta name="twitter:description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://auti.dev/images/share.png">
+  <meta name="twitter:title" content="Demystifying Elastic SIEM">
+  <meta name="twitter:description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations">
 
 
 
-<meta itemprop="name" content="Demystifying Elastic SIEM">
-<meta itemprop="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations"><meta itemprop="datePublished" content="2023-10-17T12:35:53+05:30" />
-<meta itemprop="dateModified" content="2023-10-17T12:35:53+05:30" />
-<meta itemprop="wordCount" content="762"><meta itemprop="image" content="https://auti.dev/images/share.png"/>
-<meta itemprop="keywords" content="elasticsearch,cybersecurity,siem-soc,blue-teaming,tools," />
+
+  <meta itemprop="name" content="Demystifying Elastic SIEM">
+  <meta itemprop="description" content="A Comprehensive Guide to Configuring a Security Information and Event Management (SIEM) Tool with Elasticsearch and Integrations">
+  <meta itemprop="datePublished" content="2023-10-17T12:35:53+05:30">
+  <meta itemprop="dateModified" content="2023-10-17T12:35:53+05:30">
+  <meta itemprop="wordCount" content="762">
+  <meta itemprop="image" content="https://auti.dev/images/share.png">
+  <meta itemprop="keywords" content="Elasticsearch,Cybersecurity,Siem-Soc,Blue-Teaming,Tools">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   <style>
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: Verdana, sans-serif;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     max-width: 720px;
     text-align: left;
     background-color: #fff;
@@ -103,7 +115,6 @@
   code {
     padding: 2px 5px;
     background-color: #f2f2f2;
-    font-family: 'Fira Code', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Cascadia Code', Courier, monospace;
   }
 
   pre code {
@@ -162,82 +173,110 @@
   }
 
   ul.blog-posts li a:visited {
-    color: rgba(255, 10, 84, 0.75);
+    color: #8b6fcb;
   }
 
-   
-
-</style>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-<style>
-
-     
-     
-     
-     
-     
-     
-
+  @media (prefers-color-scheme: dark) {
     body {
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #333;
+      color: #ddd;
     }
 
-    h1 {
-        font-weight: 900;
-    }
-
-    h2 {
-        font-weight: 800;
-    }
-
-    h3 {
-        font-weight: 700;
-    }
-
-    h4 {
-        font-weight: 600;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
     }
 
     a {
-        color: rgba(255, 10, 84, 0.75);
-        text-decoration: none;
-        position: relative;
-        transition: width 0.5s ease;
+      color: #8cc2dd;
     }
 
-    a::before {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background-color: rgb(255, 71, 126);
-        transition: width 0.5s ease;
+    code {
+      background-color: #777;
     }
 
-    a:hover {
-        color: rgba(255, 10, 84, 1);
-        transition: width 0.5s ease;
-    }
-    a:hover::before {
-        width: 100%;  
+    pre code {
+      color: #ddd;
     }
 
-    .title:hover::before {
-        width: 0% !important;
+    blockquote {
+      color: #ccc;
     }
 
-    .iframe-container {
-        display: flex;
-        align-items: center;
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
     }
 
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    font-weight: 800;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  a {
+    color: rgba(255, 10, 84, 0.75);
+    text-decoration: none;
+    position: relative;
+    transition: width 0.5s ease;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 71, 126);
+    transition: width 0.5s ease;
+  }
+
+  a:hover {
+    color: rgba(255, 10, 84, 1);
+    transition: width 0.5s ease;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  .title:hover::before {
+    width: 0% !important;
+  }
+
+  .iframe-container {
+    display: flex;
+    align-items: center;
+  }
 </style></head>
 
 <body>
@@ -250,10 +289,10 @@
 <a href="/blog">Blog</a>
 
 
-<a href="/talk">Talks</a>
+<a href="/talks">Talks</a>
 
 
-<a href="/project">Projects</a>
+<a href="/projects">Projects</a>
 </nav>
 </header>
   <main>
@@ -321,15 +360,15 @@
 </content>
 <p>
   
-  <a href="https://auti.dev/blog/elasticsearch/">#elasticsearch</a>
+  <a href="https://auti.dev/blog/elasticsearch/">#Elasticsearch</a>
   
-  <a href="https://auti.dev/blog/cybersecurity/">#cybersecurity</a>
+  <a href="https://auti.dev/blog/cybersecurity/">#Cybersecurity</a>
   
-  <a href="https://auti.dev/blog/siem-soc/">#siem-soc</a>
+  <a href="https://auti.dev/blog/siem-soc/">#Siem-Soc</a>
   
-  <a href="https://auti.dev/blog/blue-teaming/">#blue-teaming</a>
+  <a href="https://auti.dev/blog/blue-teaming/">#Blue-Teaming</a>
   
-  <a href="https://auti.dev/blog/tools/">#tools</a>
+  <a href="https://auti.dev/blog/tools/">#Tools</a>
   
 </p>
 

@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://auti.dev/images/favicon/favicon.ico" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon/favicon.ico" />
 <title>Talks | auti.dev   ≽^._.^≼ ∫</title>
 <meta name="title" content="Talks" />
 <meta name="description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX" />
-<meta name="keywords" content="active-directory,blue-teaming,cybersecurity,elasticsearch,honeypot,owasp,purple-teaming,red-teaming,siem-soc,tools,web-security,windows," />
+<meta name="keywords" content="active-directory,blue-teaming,cloud,cybersecurity,elasticsearch,honeypot,owasp,purple-teaming,red-teaming,siem-soc,tools,web-security,windows," />
 
 
-<meta property="og:title" content="Talks" />
-<meta property="og:description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://auti.dev/talk/" /><meta property="og:image" content="https://auti.dev/images/share.png"/><meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫" />
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://auti.dev/images/share.png"/>
-
-<meta name="twitter:title" content="Talks"/>
-<meta name="twitter:description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX"/>
+<meta property="og:url" content="http://localhost:1313/talk/">
+  <meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫">
+  <meta property="og:title" content="Talks">
+  <meta property="og:description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
 
 
 
-<meta itemprop="name" content="Talks">
-<meta itemprop="description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Talks">
+  <meta name="twitter:description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX">
+
+
+
+
+  <meta itemprop="name" content="Talks">
+  <meta itemprop="description" content="Cybersecurity Enthusiast &amp; Co-Founder @ CyHEX">
+  <meta itemprop="datePublished" content="2024-06-15T12:00:00+05:30">
+  <meta itemprop="dateModified" content="2024-06-15T12:00:00+05:30">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <link rel="alternate" type="application/rss+xml" href="https://auti.dev/talk/index.xml" title="auti.dev   ≽^._.^≼ ∫" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/talk/index.xml" title="auti.dev   ≽^._.^≼ ∫" />
   <style>
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: Verdana, sans-serif;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     max-width: 720px;
     text-align: left;
     background-color: #fff;
@@ -99,7 +106,6 @@
   code {
     padding: 2px 5px;
     background-color: #f2f2f2;
-    font-family: 'Fira Code', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto Mono', 'Cascadia Code', Courier, monospace;
   }
 
   pre code {
@@ -158,82 +164,110 @@
   }
 
   ul.blog-posts li a:visited {
-    color: rgba(255, 10, 84, 0.75);
+    color: #8b6fcb;
   }
 
-   
-
-</style>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-<style>
-
-     
-     
-     
-     
-     
-     
-
+  @media (prefers-color-scheme: dark) {
     body {
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #333;
+      color: #ddd;
     }
 
-    h1 {
-        font-weight: 900;
-    }
-
-    h2 {
-        font-weight: 800;
-    }
-
-    h3 {
-        font-weight: 700;
-    }
-
-    h4 {
-        font-weight: 600;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
     }
 
     a {
-        color: rgba(255, 10, 84, 0.75);
-        text-decoration: none;
-        position: relative;
-        transition: width 0.5s ease;
+      color: #8cc2dd;
     }
 
-    a::before {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 0;
-        height: 1px;
-        background-color: rgb(255, 71, 126);
-        transition: width 0.5s ease;
+    code {
+      background-color: #777;
     }
 
-    a:hover {
-        color: rgba(255, 10, 84, 1);
-        transition: width 0.5s ease;
-    }
-    a:hover::before {
-        width: 100%;  
+    pre code {
+      color: #ddd;
     }
 
-    .title:hover::before {
-        width: 0% !important;
+    blockquote {
+      color: #ccc;
     }
 
-    .iframe-container {
-        display: flex;
-        align-items: center;
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
     }
 
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    font-weight: 800;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  a {
+    color: rgba(255, 10, 84, 0.75);
+    text-decoration: none;
+    position: relative;
+    transition: width 0.5s ease;
+  }
+
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 71, 126);
+    transition: width 0.5s ease;
+  }
+
+  a:hover {
+    color: rgba(255, 10, 84, 1);
+    transition: width 0.5s ease;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  .title:hover::before {
+    width: 0% !important;
+  }
+
+  .iframe-container {
+    display: flex;
+    align-items: center;
+  }
 </style></head>
 
 <body>
@@ -245,11 +279,6 @@
 
 <a href="/blog">Blog</a>
 
-
-<a href="/talk">Talks</a>
-
-
-<a href="/project">Projects</a>
 </nav>
 </header>
   <main>
@@ -260,12 +289,23 @@
     <li>
       <span>
         <i>
+          <time datetime='2024-06-15' pubdate>
+            15 Jun, 2024
+          </time>
+        </i>
+      </span>
+      <a href="http://localhost:1313/cloud-security-basics/">Cloud Security Basics</a>
+    </li>
+    
+    <li>
+      <span>
+        <i>
           <time datetime='2023-10-17' pubdate>
             17 Oct, 2023
           </time>
         </i>
       </span>
-      <a href="https://auti.dev/leveraging-cybersecurity-using-elasticsearch/">Leveraging Cybersecurity using ElasticSearch</a>
+      <a href="http://localhost:1313/leveraging-cybersecurity-using-elasticsearch/">Leveraging Cybersecurity using ElasticSearch</a>
     </li>
     
     <li>
@@ -276,7 +316,7 @@
           </time>
         </i>
       </span>
-      <a href="https://auti.dev/owasp-top-10/">OWASP Top 10</a>
+      <a href="http://localhost:1313/owasp-top-10/">OWASP Top 10</a>
     </li>
     
   </ul>
@@ -284,29 +324,31 @@
     <small>
       <div>
         
-        <a href="https://auti.dev/blog/active-directory/">#active-directory</a>&nbsp;
+        <a href="http://localhost:1313/blog/active-directory/">#Active-Directory</a>&nbsp;
         
-        <a href="https://auti.dev/blog/blue-teaming/">#blue-teaming</a>&nbsp;
+        <a href="http://localhost:1313/blog/blue-teaming/">#Blue-Teaming</a>&nbsp;
         
-        <a href="https://auti.dev/blog/cybersecurity/">#cybersecurity</a>&nbsp;
+        <a href="http://localhost:1313/blog/cloud/">#Cloud</a>&nbsp;
         
-        <a href="https://auti.dev/blog/elasticsearch/">#elasticsearch</a>&nbsp;
+        <a href="http://localhost:1313/blog/cybersecurity/">#Cybersecurity</a>&nbsp;
         
-        <a href="https://auti.dev/blog/honeypot/">#honeypot</a>&nbsp;
+        <a href="http://localhost:1313/blog/elasticsearch/">#Elasticsearch</a>&nbsp;
         
-        <a href="https://auti.dev/blog/owasp/">#owasp</a>&nbsp;
+        <a href="http://localhost:1313/blog/honeypot/">#Honeypot</a>&nbsp;
         
-        <a href="https://auti.dev/blog/purple-teaming/">#purple-teaming</a>&nbsp;
+        <a href="http://localhost:1313/blog/owasp/">#Owasp</a>&nbsp;
         
-        <a href="https://auti.dev/blog/red-teaming/">#red-teaming</a>&nbsp;
+        <a href="http://localhost:1313/blog/purple-teaming/">#Purple-Teaming</a>&nbsp;
         
-        <a href="https://auti.dev/blog/siem-soc/">#siem-soc</a>&nbsp;
+        <a href="http://localhost:1313/blog/red-teaming/">#Red-Teaming</a>&nbsp;
         
-        <a href="https://auti.dev/blog/tools/">#tools</a>&nbsp;
+        <a href="http://localhost:1313/blog/siem-soc/">#Siem-Soc</a>&nbsp;
         
-        <a href="https://auti.dev/blog/web-security/">#web-security</a>&nbsp;
+        <a href="http://localhost:1313/blog/tools/">#Tools</a>&nbsp;
         
-        <a href="https://auti.dev/blog/windows/">#windows</a>&nbsp;
+        <a href="http://localhost:1313/blog/web-security/">#Web-Security</a>&nbsp;
+        
+        <a href="http://localhost:1313/blog/windows/">#Windows</a>&nbsp;
         
       </div>
     </small>

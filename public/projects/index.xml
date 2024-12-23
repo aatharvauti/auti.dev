@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on auti.dev   ≽^._.^≼ ∫</title>
-    <link>http://localhost:1313/project/</link>
+    <link>https://auti.dev/projects/</link>
     <description>Recent content in Projects on auti.dev   ≽^._.^≼ ∫</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
     <lastBuildDate>Sat, 19 Aug 2023 14:28:54 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://auti.dev/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HoneyTrack</title>
-      <link>http://localhost:1313/honeytrack/</link>
+      <link>https://auti.dev/honeytrack/</link>
       <pubDate>Sat, 19 Aug 2023 14:28:54 +0530</pubDate>
-      <guid>http://localhost:1313/honeytrack/</guid>
+      <guid>https://auti.dev/honeytrack/</guid>
       <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.&#xA;HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
   </channel>

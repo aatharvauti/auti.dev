@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Talks on auti.dev   ≽^._.^≼ ∫</title>
-    <link>http://localhost:1313/talk/</link>
+    <link>https://auti.dev/talks/</link>
     <description>Recent content in Talks on auti.dev   ≽^._.^≼ ∫</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
     <lastBuildDate>Sat, 15 Jun 2024 12:00:00 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://auti.dev/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Security Basics</title>
-      <link>http://localhost:1313/cloud-security-basics/</link>
+      <link>https://auti.dev/cloud-security-basics/</link>
       <pubDate>Sat, 15 Jun 2024 12:00:00 +0530</pubDate>
-      <guid>http://localhost:1313/cloud-security-basics/</guid>
+      <guid>https://auti.dev/cloud-security-basics/</guid>
       <description>First seminar on 24th June 2024, as a seminar at Mumbai University Presentation: docs.google.com&#xA;I had the honor of delivering a talk at SAKEC, Mumbai University, where I introduced the fundamental concepts of cloud computing. This session delved into the core principles of cloud architecture, service models, and deployment strategies, providing a comprehensive overview of how cloud technology is transforming the IT landscape. Through practical examples and real-world scenarios, I highlighted the benefits of cloud adoption and discussed the key considerations for securing cloud environments.</description>
     </item>
     <item>
       <title>Leveraging Cybersecurity using ElasticSearch</title>
-      <link>http://localhost:1313/leveraging-cybersecurity-using-elasticsearch/</link>
+      <link>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</link>
       <pubDate>Tue, 17 Oct 2023 12:35:53 +0530</pubDate>
-      <guid>http://localhost:1313/leveraging-cybersecurity-using-elasticsearch/</guid>
+      <guid>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</guid>
       <description>First talk on 14th October 2023, at Elastic Community Event, Mumbai Presentation: docs.google.com&#xA;This talk is all about how one can leverage Cybersecurity and create awesome tools and integrations using ElasticSearch&amp;rsquo;s builtin integrations. These integrations can be used with pre-existing open source as well as proprietary Cybersecurity tools like Suricata, Snort, etc. Not only specialized cybersecurity tools, but also Apache Web Server integration that can monitor an Apache2 instance for access and error logs.</description>
     </item>
     <item>
       <title>OWASP Top 10</title>
-      <link>http://localhost:1313/owasp-top-10/</link>
+      <link>https://auti.dev/owasp-top-10/</link>
       <pubDate>Wed, 15 Feb 2023 12:22:44 +0530</pubDate>
-      <guid>http://localhost:1313/owasp-top-10/</guid>
+      <guid>https://auti.dev/owasp-top-10/</guid>
       <description>First talk on 15th February 2023, as a guest lecture on Ethical Hacking and Digital Forensics Presentation: docs.google.com&#xA;I had the privilege of presenting a talk at SAKEC, Mumbai University, diving deep into the intricate workings of web applications while shedding light on the critical vulnerabilities outlined in the OWASP top 10. Through interactive demonstrations, I explained the underlying mechanics of web applications and elucidated strategies to mitigate these vulnerabilities, empowering the audience with actionable insights to secure their web applications.</description>
     </item>
   </channel>
