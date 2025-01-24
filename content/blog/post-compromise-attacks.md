@@ -771,4 +771,4 @@ Great!
 	-   Monitor for possible exploitation attempts with the [open-source tool](https://github.com/preempt/ntlm-scanner) released by CrowdStrike (formerly Preempt).
 
 
-## [Next >> Part 4: Post Exploitation](https://auti.dev/compromising-ad-part-4-post-exploitation/)
+## [Next >> Part 4: Post Exploitation](https://www.auti.dev/compromising-ad-part-4-post-exploitation/)

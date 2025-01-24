@@ -141,4 +141,4 @@ Bloodhound is a tool which downloads the data of Active Directory and Visualize 
 - Enumerate!
 
 
-## [Next >> Part 3: Post Compromise Attacks](https://auti.dev/useful-ad-resources/)
+## [Next >> Part 3: Post Compromise Attacks](https://www.auti.dev/compromising-ad-part-3-post-compromise-attacks/)

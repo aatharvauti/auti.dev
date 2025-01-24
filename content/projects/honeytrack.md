@@ -244,7 +244,7 @@ An [IEEE Paper](https://ieeexplore.ieee.org/document/10063105) Presentation and 
 
 &nbsp;
 
-### "HoneyTrack" was my 2nd year Engineering Mini Project
+### "HoneyTrack" was my project during my sophomore year
 
 Collaborated with [Vivek Mishra](https://www.linkedin.com/in/vivek051/), [Jay Makwana](https://www.linkedin.com/in/thejaymakwana/), and [Shrawani Pagar](https://www.linkedin.com/in/shrawani-js-pagar-382610215/).
 

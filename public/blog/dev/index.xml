@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dev on auti.dev   ≽^._.^≼ ∫</title>
+    <link>http://localhost:1313/blog/dev/</link>
+    <description>Recent content in Dev on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Fri, 17 Jan 2025 09:10:03 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GenSecOps</title>
+      <link>http://localhost:1313/gensecops/</link>
+      <pubDate>Fri, 17 Jan 2025 09:10:03 -0800</pubDate>
+      <guid>http://localhost:1313/gensecops/</guid>
+      <description>Revolutionizing Security Testing with Generative AI in DevSecOps In today’s fast-paced software development environment, integrating security into the lifecycle is no longer optional—it’s a necessity. DevSecOps, which combines software development, security, and IT operations, has emerged as a key methodology to ensure security becomes an integral part of development workflows. Yet, traditional security testing methods remain slow, manual, and often incapable of keeping up with the dynamic pace of modern development.</description>
+    </item>
+  </channel>
+</rss>

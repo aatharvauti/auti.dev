@@ -3,22 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://auti.dev/</loc>
-    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
-  </url><url>
-    <loc>https://auti.dev/blog/blue-teaming/</loc>
-    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/cloud/</loc>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/cybersecurity/</loc>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/siem-soc/</loc>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/talks/</loc>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/zero-trust-architecture/</loc>
+    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/blue-teaming/</loc>
     <lastmod>2024-06-15T12:00:00+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/cloud-security-basics/</loc>
     <lastmod>2024-06-15T12:00:00+05:30</lastmod>
   </url><url>
-    <loc>https://auti.dev/blog/cybersecurity/</loc>
-    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+    <loc>https://auti.dev/blog/devsecops/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
   </url><url>
-    <loc>https://auti.dev/talks/</loc>
-    <lastmod>2024-06-15T12:00:00+05:30</lastmod>
+    <loc>https://auti.dev/blog/gen-ai/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/gensecops/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/projects/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/tools/</loc>
+    <lastmod>2024-05-15T12:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/android/</loc>
+    <lastmod>2024-04-20T09:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/mobsecops/</loc>
+    <lastmod>2024-04-20T09:00:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/reverse-engineering/</loc>
+    <lastmod>2024-04-20T09:00:00-08:00</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
@@ -32,19 +62,10 @@
     <loc>https://auti.dev/leveraging-cybersecurity-using-elasticsearch/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
-    <loc>https://auti.dev/blog/siem-soc/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
-  </url><url>
-    <loc>https://auti.dev/blog/tools/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
-  </url><url>
     <loc>https://auti.dev/blog/honeypot/</loc>
     <lastmod>2023-08-19T14:28:54+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/honeytrack/</loc>
-    <lastmod>2023-08-19T14:28:54+05:30</lastmod>
-  </url><url>
-    <loc>https://auti.dev/projects/</loc>
     <lastmod>2023-08-19T14:28:54+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/purple-teaming/</loc>

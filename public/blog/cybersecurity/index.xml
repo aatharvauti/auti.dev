@@ -7,14 +7,35 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Sat, 15 Jun 2024 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2024 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://auti.dev/blog/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Trust Architecture</title>
+      <link>https://auti.dev/zero-trust-architecture/</link>
+      <pubDate>Sun, 15 Sep 2024 12:00:00 +0530</pubDate>
+      <guid>https://auti.dev/zero-trust-architecture/</guid>
+      <description>First talk on 14th September 2024, at University of Southern California, Los Angeles Presentation: docs.google.com&#xA;I had the privilege of delivering a talk for DSCI 519 at USC. We introduced the concept of Zero Trust Architecture (ZTA) and its role in building high-assurance systems. This session explored the core principles of ZTA, including identity-centric security, micro-segmentation, and continuous monitoring, demonstrating how these concepts fortify system security and minimize risks.&#xA;We detailed a systematic approach to developing ZTA, from system inventory and risk mapping to secure communication and incident response automation.</description>
+    </item>
     <item>
       <title>Cloud Security Basics</title>
       <link>https://auti.dev/cloud-security-basics/</link>
       <pubDate>Sat, 15 Jun 2024 12:00:00 +0530</pubDate>
       <guid>https://auti.dev/cloud-security-basics/</guid>
       <description>First seminar on 24th June 2024, as a seminar at Mumbai University Presentation: docs.google.com&#xA;I had the honor of delivering a talk at SAKEC, Mumbai University, where I introduced the fundamental concepts of cloud computing. This session delved into the core principles of cloud architecture, service models, and deployment strategies, providing a comprehensive overview of how cloud technology is transforming the IT landscape. Through practical examples and real-world scenarios, I highlighted the benefits of cloud adoption and discussed the key considerations for securing cloud environments.</description>
+    </item>
+    <item>
+      <title>GenSecOps</title>
+      <link>https://auti.dev/gensecops/</link>
+      <pubDate>Wed, 15 May 2024 12:00:00 -0800</pubDate>
+      <guid>https://auti.dev/gensecops/</guid>
+      <description>Revolutionizing Security Testing with Generative AI in DevSecOps In today’s fast-paced software development environment, integrating security into the lifecycle is no longer optional—it’s a necessity. DevSecOps, which combines software development, security, and IT operations, has emerged as a key methodology to ensure security becomes an integral part of development workflows. Yet, traditional security testing methods remain slow, manual, and often incapable of keeping up with the dynamic pace of modern development.</description>
+    </item>
+    <item>
+      <title>MobSecOps</title>
+      <link>https://auti.dev/mobsecops/</link>
+      <pubDate>Sat, 20 Apr 2024 09:00:00 -0800</pubDate>
+      <guid>https://auti.dev/mobsecops/</guid>
+      <description>A Comprehensive Android Security Framework In today’s interconnected world, mobile applications are central to our personal and professional lives. However, the rise in mobile app usage is paralleled by increasingly sophisticated cyber threats. Traditional tools, while effective, often fail to keep up with these evolving vulnerabilities. Recognizing this gap, we developed MobSecOps, an advanced Android Security Framework tailored to the OWASP Mobile Top 10 2023 vulnerabilities. It combines static and dynamic analysis with AI-driven insights to deliver a comprehensive security solution.</description>
     </item>
     <item>
       <title>Demystifying Elastic SIEM</title>

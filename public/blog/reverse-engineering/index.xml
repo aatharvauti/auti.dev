@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse-Engineering on auti.dev   ≽^._.^≼ ∫</title>
+    <link>https://auti.dev/blog/reverse-engineering/</link>
+    <description>Recent content in Reverse-Engineering on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Sat, 20 Apr 2024 09:00:00 -0800</lastBuildDate>
+    <atom:link href="https://auti.dev/blog/reverse-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MobSecOps</title>
+      <link>https://auti.dev/mobsecops/</link>
+      <pubDate>Sat, 20 Apr 2024 09:00:00 -0800</pubDate>
+      <guid>https://auti.dev/mobsecops/</guid>
+      <description>A Comprehensive Android Security Framework In today’s interconnected world, mobile applications are central to our personal and professional lives. However, the rise in mobile app usage is paralleled by increasingly sophisticated cyber threats. Traditional tools, while effective, often fail to keep up with these evolving vulnerabilities. Recognizing this gap, we developed MobSecOps, an advanced Android Security Framework tailored to the OWASP Mobile Top 10 2023 vulnerabilities. It combines static and dynamic analysis with AI-driven insights to deliver a comprehensive security solution.</description>
+    </item>
+  </channel>
+</rss>

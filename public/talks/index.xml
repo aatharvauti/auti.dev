@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Sat, 15 Jun 2024 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2024 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://auti.dev/talks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero Trust Architecture</title>
+      <link>https://auti.dev/zero-trust-architecture/</link>
+      <pubDate>Sun, 15 Sep 2024 12:00:00 +0530</pubDate>
+      <guid>https://auti.dev/zero-trust-architecture/</guid>
+      <description>First talk on 14th September 2024, at University of Southern California, Los Angeles Presentation: docs.google.com&#xA;I had the privilege of delivering a talk for DSCI 519 at USC. We introduced the concept of Zero Trust Architecture (ZTA) and its role in building high-assurance systems. This session explored the core principles of ZTA, including identity-centric security, micro-segmentation, and continuous monitoring, demonstrating how these concepts fortify system security and minimize risks.&#xA;We detailed a systematic approach to developing ZTA, from system inventory and risk mapping to secure communication and incident response automation.</description>
+    </item>
     <item>
       <title>Cloud Security Basics</title>
       <link>https://auti.dev/cloud-security-basics/</link>
