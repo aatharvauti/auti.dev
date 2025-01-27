@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Policy on auti.dev   ≽^._.^≼ ∫</title>
+    <link>https://auti.dev/blog/policy/</link>
+    <description>Recent content in Policy on auti.dev   ≽^._.^≼ ∫</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <lastBuildDate>Wed, 22 Jan 2025 12:50:00 -0800</lastBuildDate>
+    <atom:link href="https://auti.dev/blog/policy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Data Is Out There? - Uber &amp; Lyft</title>
+      <link>https://auti.dev/what-data-is-out-there-uber-lyft/</link>
+      <pubDate>Wed, 22 Jan 2025 12:50:00 -0800</pubDate>
+      <guid>https://auti.dev/what-data-is-out-there-uber-lyft/</guid>
+      <description>Introduction In an increasingly data-driven world, companies like Uber and Lyft have become essential services, revolutionizing transportation. However, with their global reach and tech-driven platforms, these ride-hailing giants collect and process vast amounts of sensitive personal data from users, drivers, and third parties.&#xA;In this report, we explore &amp;amp; compare the privacy practices of Uber and Lyft, focusing on the types of data collected, its storage, sharing mechanisms, retention policies, and potential uses.</description>
+    </item>
+    <item>
+      <title>HIPAA Unveiled</title>
+      <link>https://auti.dev/hipaa-unveiled/</link>
+      <pubDate>Wed, 20 Nov 2024 10:50:45 -0800</pubDate>
+      <guid>https://auti.dev/hipaa-unveiled/</guid>
+      <description>The Digital Frontier of Healthcare Privacy Picture this: It&amp;rsquo;s 3 AM, and somewhere in a healthcare network, millions of sensitive patient records are being transmitted, stored, and protected. Behind this intricate dance of data lies HIPAA - the Health Insurance Portability and Accountability Act - a regulatory powerhouse that has revolutionized healthcare data protection.&#xA;Why HIPAA Matters in the Age of Cyber Vulnerability? In an era where a single data breach can expose millions of patient records, HIPAA stands as a critical line of defense.</description>
+    </item>
+  </channel>
+</rss>

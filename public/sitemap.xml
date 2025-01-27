@@ -3,13 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://auti.dev/</loc>
-    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/cloud/</loc>
-    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/compliance/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/data-security/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/policy/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/blog/privacy/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/what-data-is-out-there-uber-lyft/</loc>
+    <lastmod>2025-01-22T12:50:00-08:00</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/cybersecurity/</loc>
-    <lastmod>2024-09-15T12:00:00+05:30</lastmod>
+    <lastmod>2024-11-20T10:50:45-08:00</lastmod>
+  </url><url>
+    <loc>https://auti.dev/hipaa-unveiled/</loc>
+    <lastmod>2024-11-20T10:50:45-08:00</lastmod>
   </url><url>
     <loc>https://auti.dev/blog/siem-soc/</loc>
     <lastmod>2024-09-15T12:00:00+05:30</lastmod>
@@ -49,9 +70,6 @@
   </url><url>
     <loc>https://auti.dev/blog/reverse-engineering/</loc>
     <lastmod>2024-04-20T09:00:00-08:00</lastmod>
-  </url><url>
-    <loc>https://auti.dev/blog/</loc>
-    <lastmod>2023-10-17T12:35:53+05:30</lastmod>
   </url><url>
     <loc>https://auti.dev/demystifying-elastic-siem/</loc>
     <lastmod>2023-10-17T12:35:53+05:30</lastmod>

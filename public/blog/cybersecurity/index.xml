@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023, Atharva Auti.</copyright>
-    <lastBuildDate>Sun, 15 Sep 2024 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 10:50:45 -0800</lastBuildDate>
     <atom:link href="https://auti.dev/blog/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HIPAA Unveiled</title>
+      <link>https://auti.dev/hipaa-unveiled/</link>
+      <pubDate>Wed, 20 Nov 2024 10:50:45 -0800</pubDate>
+      <guid>https://auti.dev/hipaa-unveiled/</guid>
+      <description>The Digital Frontier of Healthcare Privacy Picture this: It&amp;rsquo;s 3 AM, and somewhere in a healthcare network, millions of sensitive patient records are being transmitted, stored, and protected. Behind this intricate dance of data lies HIPAA - the Health Insurance Portability and Accountability Act - a regulatory powerhouse that has revolutionized healthcare data protection.&#xA;Why HIPAA Matters in the Age of Cyber Vulnerability? In an era where a single data breach can expose millions of patient records, HIPAA stands as a critical line of defense.</description>
+    </item>
     <item>
       <title>Zero Trust Architecture</title>
       <link>https://auti.dev/zero-trust-architecture/</link>
