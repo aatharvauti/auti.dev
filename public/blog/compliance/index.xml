@@ -6,7 +6,7 @@
     <description>Recent content in Compliance on auti.dev   ≽^._.^≼ ∫</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <copyright>Copyright © 2023, Atharva Auti.</copyright>
+    <copyright>Copyright © 2023 - 2025, Atharva Auti.</copyright>
     <lastBuildDate>Wed, 22 Jan 2025 12:50:00 -0800</lastBuildDate>
     <atom:link href="https://auti.dev/blog/compliance/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -22,6 +22,13 @@
       <pubDate>Wed, 20 Nov 2024 10:50:45 -0800</pubDate>
       <guid>https://auti.dev/hipaa-unveiled/</guid>
       <description>The Digital Frontier of Healthcare Privacy Picture this: It&amp;rsquo;s 3 AM, and somewhere in a healthcare network, millions of sensitive patient records are being transmitted, stored, and protected. Behind this intricate dance of data lies HIPAA - the Health Insurance Portability and Accountability Act - a regulatory powerhouse that has revolutionized healthcare data protection.&#xA;Why HIPAA Matters in the Age of Cyber Vulnerability? In an era where a single data breach can expose millions of patient records, HIPAA stands as a critical line of defense.</description>
+    </item>
+    <item>
+      <title>Trusted Computing Base - Mindmap</title>
+      <link>https://auti.dev/trusted-computing-base-mindmap/</link>
+      <pubDate>Tue, 03 Sep 2024 10:00:25 -0800</pubDate>
+      <guid>https://auti.dev/trusted-computing-base-mindmap/</guid>
+      <description>A Trusted Computing Base (TCB) is the totality of the protection mechanisms within a system or architecture that work together to enforce a security policy.&#xA;Definition Simplified Totality: ALL&#xA;Protection Mechanisms:&#xA;Hardware (TPM) Firmware (Code signing) Software (Anti-virus) Figure: Mindmap for TCB&#xA;A Trusted Computing Base comprises all of the protection mechanisms:&#xA;People Processes Technology Reference Monitor Concept (RMC) A reference monitor is an access control concept of an abstract machine that mediates all accesses to objects by subjects.</description>
     </item>
   </channel>
 </rss>

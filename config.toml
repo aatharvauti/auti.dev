@@ -8,7 +8,7 @@ theme = 'hugo-bearblog'
 # Basic metadata configuration for your blog.
 title = "auti.dev   ≽^._.^≼ ∫"
 author = "Atharva Auti"
-copyright = "Copyright © 2023, Atharva Auti."
+copyright = "Copyright © 2023 - 2025, Atharva Auti."
 languageCode = "en-US"
 
 # Generate a nice robots.txt for SEO
@@ -26,7 +26,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Cybersecurity Enthusiast & Co-Founder @ CyHEX"
+  description = "Loves Cats 🐱 Hacks Computers // Cybersecurity @ USC"
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
