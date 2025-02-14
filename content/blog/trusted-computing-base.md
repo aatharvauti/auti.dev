@@ -20,6 +20,7 @@ A ***Trusted Computing Base (TCB)*** is the **totality** of the **protection** *
 - Software (Anti-virus)
 
 ![*Figure: Mindmap for TCB*](https://auti.dev/images/blog/trusted-computing-base/mindmap.png)
+
 *Figure: Mindmap for TCB*
 
 A ***Trusted Computing Base*** comprises all of the protection mechanisms: 
@@ -30,11 +31,7 @@ A ***Trusted Computing Base*** comprises all of the protection mechanisms:
 
 ## Reference Monitor Concept (RMC)
 
-<aside>
-
 A ***reference monitor*** is an **access control** concept of an abstract machine that **mediates** all **accesses** **to objects by subjects**.
-
-</aside>
 
 *Definition 20–3. [50]* 
 
@@ -46,15 +43,31 @@ A ***reference monitor*** is an **access control** concept of an abstract machin
     - An ***object*** is a passive entity (it is been accessed by the subject)
 
 ![*Figure: Reference Monitor Concept*](https://auti.dev/images/blog/trusted-computing-base/reference-monitor-concept.png)
+
 *Figure: Reference Monitor Concept*
 
-## Security Kernel
+## Reference Monitor Principles
 
-<aside>
+1. **Tamper Proof**
+    - **Isolation**: protected from unauthorized ***alteration***
+    - Resists subversion and malicious software
+2. **Always invoked (non by-passable)**
+    - **Completeness:** every access is ***mediated***
+3. Small and simple enough to **allow assurance** of its correctness
+    - **Verifiability**: ***verified*** to perform its functions properly
+    - Ability to implement policy with high assurance
+
+*Defines what it means for a system to be **“secure”**. Most system vulnerabilities can be traced to violations of one or more of the RM principles*
+
+### Security Kernel
 
 A ***security kernel*** is a **combination** of **hardware & software** that **implements** a **reference monitor**.
 
-</aside>
+- Constantly monitors and controls access to critical system components.
+- Ensures that only authorized processes and users can interact with sensitive data and functionality.
+- Enforces a set of predefined security policies to create a robust barrier against potential threats.
+- A compact and well-defined structure that allows for thorough testing and verification.
+
 
 ### Resources
 

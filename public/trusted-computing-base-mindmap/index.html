@@ -42,7 +42,7 @@
   <meta itemprop="description" content="A Trusted Computing Base (TCB) is the totality of the protection mechanisms within a system or architecture that work together to enforce a security policy.">
   <meta itemprop="datePublished" content="2024-09-03T10:00:25-08:00">
   <meta itemprop="dateModified" content="2024-09-03T10:00:25-08:00">
-  <meta itemprop="wordCount" content="217">
+  <meta itemprop="wordCount" content="341">
   <meta itemprop="image" content="https://auti.dev/images/share.png">
   <meta itemprop="keywords" content="Blue-Teaming,Compliance,Cybersecurity,Policy">
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -288,8 +288,8 @@
 <li>Firmware (Code signing)</li>
 <li>Software (Anti-virus)</li>
 </ul>
-<p><img src="https://auti.dev/images/blog/trusted-computing-base/mindmap.png" alt="Figure: Mindmap for TCB">
-<em>Figure: Mindmap for TCB</em></p>
+<p><img src="https://auti.dev/images/blog/trusted-computing-base/mindmap.png" alt="Figure: Mindmap for TCB"></p>
+<p><em>Figure: Mindmap for TCB</em></p>
 <p>A <em><strong>Trusted Computing Base</strong></em> comprises all of the protection mechanisms:</p>
 <ul>
 <li>People</li>
@@ -297,9 +297,7 @@
 <li>Technology</li>
 </ul>
 <h2 id="reference-monitor-concept-rmc">Reference Monitor Concept (RMC)</h2>
-<aside>
 <p>A <em><strong>reference monitor</strong></em> is an <strong>access control</strong> concept of an abstract machine that <strong>mediates</strong> all <strong>accesses</strong> <strong>to objects by subjects</strong>.</p>
-</aside>
 <p><em>Definition 20–3. [50]</em></p>
 <ul>
 <li>If we want to <strong>control security</strong> we have to <strong>control what subjects are allowed to</strong> control objects, and what specifically can <strong>do with objects.</strong></li>
@@ -312,12 +310,37 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://auti.dev/images/blog/trusted-computing-base/reference-monitor-concept.png" alt="Figure: Reference Monitor Concept">
-<em>Figure: Reference Monitor Concept</em></p>
-<h2 id="security-kernel">Security Kernel</h2>
-<aside>
+<p><img src="https://auti.dev/images/blog/trusted-computing-base/reference-monitor-concept.png" alt="Figure: Reference Monitor Concept"></p>
+<p><em>Figure: Reference Monitor Concept</em></p>
+<h2 id="reference-monitor-principles">Reference Monitor Principles</h2>
+<ol>
+<li><strong>Tamper Proof</strong>
+<ul>
+<li><strong>Isolation</strong>: protected from unauthorized <em><strong>alteration</strong></em></li>
+<li>Resists subversion and malicious software</li>
+</ul>
+</li>
+<li><strong>Always invoked (non by-passable)</strong>
+<ul>
+<li><strong>Completeness:</strong> every access is <em><strong>mediated</strong></em></li>
+</ul>
+</li>
+<li>Small and simple enough to <strong>allow assurance</strong> of its correctness
+<ul>
+<li><strong>Verifiability</strong>: <em><strong>verified</strong></em> to perform its functions properly</li>
+<li>Ability to implement policy with high assurance</li>
+</ul>
+</li>
+</ol>
+<p><em>Defines what it means for a system to be <strong>“secure”</strong>. Most system vulnerabilities can be traced to violations of one or more of the RM principles</em></p>
+<h3 id="security-kernel">Security Kernel</h3>
 <p>A <em><strong>security kernel</strong></em> is a <strong>combination</strong> of <strong>hardware &amp; software</strong> that <strong>implements</strong> a <strong>reference monitor</strong>.</p>
-</aside>
+<ul>
+<li>Constantly monitors and controls access to critical system components.</li>
+<li>Ensures that only authorized processes and users can interact with sensitive data and functionality.</li>
+<li>Enforces a set of predefined security policies to create a robust barrier against potential threats.</li>
+<li>A compact and well-defined structure that allows for thorough testing and verification.</li>
+</ul>
 <h3 id="resources">Resources</h3>
 <hr>
 <ul>
