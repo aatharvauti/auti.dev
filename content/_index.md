@@ -1,14 +1,18 @@
 
 # 👋  Hello, World! 
-## I am Atharva Auti 
+## I'm Atharva Auti :3
 
-I am a passionate cybersecurity enthusiast currently pursuing a Master of Science in Cybersecurity Engineering at the **University of Southern California**. I hold a Bachelor of Engineering in Cybersecurity with Honors in AI & ML from Mumbai University. With a strong foundation in programming and networking, I have honed my skills through various research and development projects, including my tenure as a reverse engineer at VJTI’s Centre of Excellence, where I focused on ARM-based reverse engineering.
+My path to cybersecurity started in ninth grade when my Windows computer crashed. Instead of giving up, I learned Linux to fix it - and that's when I discovered my passion for understanding how computers really work. Now I'm pursuing my Master's in Cybersecurity Engineering at the **University of Southern California**, building on my Bachelor's degree in Cybersecurity with minors in AI and Machine Learning from Mumbai University.
 
-In addition to my academic journey, I previously co-founded **CyHEX** Infotech Private Limited, a startup dedicated to advancing cybersecurity solutions through innovative development, products, and services. Our mission is to stay ahead of the curve by continuously learning and adapting to the latest trends and technologies, ensuring we provide our clients with cutting-edge solutions that make a real difference in the field of cybersecurity. I am not associated with my former startup since August 2024, but you can check more about it on [cyhex.co](https://cyhex.co)
+During my time as a researcher at VJTI's Centre of Excellence, I worked on reverse engineering and understanding ARM-based systems. I also got to work on making industrial systems more secure, focusing on SCADA and control systems. One of my main projects was building a security monitoring system that helps organizations track and respond to threats.
 
-My experience spans across different areas of cybersecurity, including threat intelligence, network security, and ethical hacking. I am committed to making a positive impact in the cybersecurity domain, leveraging my skills and experience to contribute to a safer digital world.
+Before starting graduate school, I took an entrepreneurial step and co-founded **CyHEX** - a cybersecurity company. We created security tools and solutions for businesses. This experience showed me firsthand how security threats affect organizations and taught me to build practical solutions. My work covers several areas: understanding threats, securing networks, and testing system security through ethical hacking.
 
+I also regularly participate in cybersecurity competitions called CTFs (Capture The Flag). These challenges help me learn new security techniques and stay current with the latest threats. I believe in learning by doing and using hands-on experience to solve real security problems.
 
+When I'm not working with computers, I enjoy exploring the world through travel and hiking. I'm also fascinated by airplanes - there's something amazing about understanding complex machines, whether they're in the sky or in our computers. At the end of a busy day, you might find me watching the sunset, taking a moment to appreciate both the technical and natural world around us.
+
+My experience spans across different areas of cybersecurity, including threat intelligence, network security, and ethical hacking. My aim is to use my knowledge and experience to make computer systems more secure. I tackle each new challenge with curiosity, always ready to learn and contribute to the field of cybersecurity!
 
 #### Wanna send a message?
 
@@ -26,7 +30,7 @@ My experience spans across different areas of cybersecurity, including threat in
 [X Twitter](https://x.com/aatharvauti)  
 [Instagram](https://instagram.com/aatharvauti)
 
-#### Official Payments
+#### If you like my work, perhaps buy me a coffee?
 
 [UPI](upi://pay?pa=auti@sbi)  
 [Paypal](https://paypal.me/aatharvauti)  
