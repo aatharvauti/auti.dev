@@ -70,7 +70,7 @@
       <link>https://auti.dev/honeytrack/</link>
       <pubDate>Sat, 19 Aug 2023 14:28:54 +0530</pubDate>
       <guid>https://auti.dev/honeytrack/</guid>
-      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.&#xA;HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search 🔍, Kibana 📈, and Filebeat 📂 which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
+      <description>Honeypot with a twist of Red Teaming With the tremendous growth of cyber-attacks, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.&#xA;HoneyTrack is a honeypot cum SIEM tool that uses various technologies like Docker, Shell Scripts, Python, Elastic Search, Kibana, and Filebeat which protect an organization&amp;rsquo;s database as well it backtracks the hacker when it intrudes the target network.</description>
     </item>
     <item>
       <title>OWASP Top 10</title>

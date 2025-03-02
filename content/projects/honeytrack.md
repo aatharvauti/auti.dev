@@ -13,7 +13,7 @@ tags = ["cybersecurity", "honeypot", "elasticsearch", "purple-teaming", "tools"]
 
 With the tremendous growth of **cyber-attacks**, the loss of private or sensitive data has risen to a peak. Honeypots are one of the most concerned topics in the field of cyber security currently.
 
-HoneyTrack is a **honeypot** cum **SIEM tool** that uses various technologies like **Docker**, **Shell** Scripts, **Python**, **Elastic Search** 🔍, **Kibana** 📈, and **Filebeat** 📂 which protect an organization's database as well it backtracks the hacker when it intrudes the target network. &nbsp;
+HoneyTrack is a **honeypot** cum **SIEM tool** that uses various technologies like **Docker**, **Shell** Scripts, **Python**, **Elastic Search**, **Kibana**, and **Filebeat** which protect an organization's database as well it backtracks the hacker when it intrudes the target network. &nbsp;
 
 Information about the attacker will be gathered by the bot in the honeypot which will help us reach the roots of the attacker. The target networks could be varied and cause a lot of damage when sensitive data will be lost/stolen.
 
@@ -25,9 +25,9 @@ However, this honeypot is like a traditional honeypot but quite updated with **n
 
 The first step and concern behind developing this project were to ensure data privacy and safety by every means for every organization. Everything was built from scratch to come up with a safe and extremely secure tool. To initiate the process an environment was created in which a honeypot could be set up.
 
-To accomplish this stage, **Docker** 🐋, an open-source software, helped us create a base of the **LINUX** 🐧 system where we could build the entire honeypot. When the **intruder** 👺 first tries to intrude into the system uses a **brute force** attack. However, there is a very rare possibility of it cracking into the system.
+To accomplish this stage, **Docker**, an open-source software, helped us create a base of the **LINUX** system where we could build the entire honeypot. When the **intruder** first tries to intrude into the system uses a **brute force** attack. However, there is a very rare possibility of it cracking into the system.
 
-Later, **python** 🐍 codes were developed to build the honeypot and set all its functionalities. In the worst-case scenario, where the cracker succeeds in intruding into our honeypot he will be affected by **payloads (viruses)** ☠️.
+Later, **python** codes were developed to build the honeypot and set all its functionalities. In the worst-case scenario, where the cracker succeeds in intruding into our honeypot he will be affected by **payloads (viruses)**.
 
 Check out other repositories at [github/HoneyTrack](https://github.com/HoneyTrack)
 
