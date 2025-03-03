@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2023 - 2025, Atharva Auti.</copyright>
-    <lastBuildDate>Wed, 15 May 2024 12:00:00 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 09:00:00 -0800</lastBuildDate>
     <atom:link href="https://auti.dev/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shepherd</title>
+      <link>https://auti.dev/shepherd/</link>
+      <pubDate>Tue, 15 Oct 2024 09:00:00 -0800</pubDate>
+      <guid>https://auti.dev/shepherd/</guid>
+      <description>The Inspiration Behind Shepherd Decentralized finance (DeFi) and smart contracts have transformed the financial landscape, offering innovative, permissionless transactions. However, with this innovation comes significant security risks. High-profile exploits, such as the infamous Poly Network hack where attackers stole over $600 million, highlight the weaknesses of current security measures.&#xA;Most smart contract audits rely on static analysis, which often fails to detect complex vulnerabilities. That’s where Shepherd comes in—a dynamic, affordable security solution that proactively tests smart contracts in real-world conditions, adding a crucial layer of defense.</description>
+    </item>
     <item>
       <title>GenSecOps</title>
       <link>https://auti.dev/gensecops/</link>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://auti.dev/images/favicon/favicon.ico" />
+<title>Shepherd | auti.dev   ≽^._.^≼ ∫</title>
+<meta name="title" content="Shepherd" />
+<meta name="description" content="Blockchain Security" />
+<meta name="keywords" content="atharva,auti,aatharvauti,auti.dev,auti-usc,ms,cybersecurity,blog,articles,github,hacker,computers,atharva auti usc,usc,los angeles,california,united states,researchcybersecurity,blockchain,smart-contracts,artificial-intelligence,blue-teaming,agents,tools," />
+
+
+<meta property="og:url" content="https://auti.dev/shepherd/">
+  <meta property="og:site_name" content="auti.dev   ≽^._.^≼ ∫">
+  <meta property="og:title" content="Shepherd">
+  <meta property="og:description" content="Blockchain Security">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-10-15T09:00:00-08:00">
+    <meta property="article:modified_time" content="2024-10-15T09:00:00-08:00">
+    <meta property="article:tag" content="Cybersecurity">
+    <meta property="article:tag" content="Blockchain">
+    <meta property="article:tag" content="Smart-Contracts">
+    <meta property="article:tag" content="Artificial-Intelligence">
+    <meta property="article:tag" content="Blue-Teaming">
+    <meta property="article:tag" content="Agents">
+    <meta property="og:image" content="https://auti.dev/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://auti.dev/images/share.png">
+  <meta name="twitter:title" content="Shepherd">
+  <meta name="twitter:description" content="Blockchain Security">
+
+
+
+
+  <meta itemprop="name" content="Shepherd">
+  <meta itemprop="description" content="Blockchain Security">
+  <meta itemprop="datePublished" content="2024-10-15T09:00:00-08:00">
+  <meta itemprop="dateModified" content="2024-10-15T09:00:00-08:00">
+  <meta itemprop="wordCount" content="539">
+  <meta itemprop="image" content="https://auti.dev/images/share.png">
+  <meta itemprop="keywords" content="Cybersecurity,Blockchain,Smart-Contracts,Artificial-Intelligence,Blue-Teaming,Agents,Tools">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+   
+
+</style>
+<style>
+  body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Roboto",
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+
+  h1 {
+    font-weight: 900;
+  }
+
+  h2 {
+    font-weight: 800;
+  }
+
+  h3 {
+    font-weight: 700;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  a {
+    color: rgba(255, 10, 84, 0.75);
+    text-decoration: none;
+    position: relative;
+    transition: width 0.5s ease;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 71, 126);
+    transition: width 0.5s ease;
+  }
+
+  a:visited {
+    color: rgba(255, 10, 84, 0.75) !important;
+  }
+
+  a:hover {
+    color: rgba(255, 10, 84, 1);
+    transition: width 0.5s ease;
+  }
+
+  a:hover::before {
+    width: 100%;
+  }
+
+  .title:hover::before {
+    width: 0% !important;
+  }
+
+  .iframe-container {
+    display: flex;
+    align-items: center;
+  }
+
+  table,
+  th,
+  td {
+    padding: 7px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>auti.dev   ≽^._.^≼ ∫</h2>
+</a>
+<nav><a href="/">Home</a>
+
+
+<a href="/blog">Blog</a>
+
+
+<a href="/talks">Talks</a>
+
+
+<a href="/projects">Projects</a>
+</nav>
+</header>
+  <main>
+
+<content>
+  <h2 id="the-inspiration-behind-shepherd"><strong>The Inspiration Behind Shepherd</strong></h2>
+<p>Decentralized finance (DeFi) and smart contracts have transformed the financial landscape, offering innovative, permissionless transactions. However, with this innovation comes significant security risks. High-profile exploits, such as the infamous Poly Network hack where attackers stole over $600 million, highlight the weaknesses of current security measures.</p>
+<p>Most smart contract audits rely on static analysis, which often fails to detect complex vulnerabilities. That’s where <strong>Shepherd</strong> comes in—a dynamic, affordable security solution that proactively tests smart contracts in real-world conditions, adding a crucial layer of defense.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/05hdjIOEqMc?si=J1qdCidqCcN46LgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<hr>
+<h2 id="what-is-shepherd"><strong>What is Shepherd?</strong></h2>
+<p>Shepherd is an advanced security testing system that simulates real-world attack scenarios on smart contracts. It leverages a <strong>multi-agent system (MAS)</strong>, where specialized agents collaborate to identify vulnerabilities:</p>
+<ul>
+<li><strong>Planner Agents</strong>: Strategize and craft attack vectors based on potential weaknesses.</li>
+<li><strong>Executor Agents</strong>: Launch simulated attacks against smart contracts.</li>
+<li><strong>Reflection Agents</strong>: Analyze attack outcomes and continuously refine strategies.</li>
+</ul>
+<p>By mimicking real-world attack patterns, Shepherd uncovers security flaws that traditional audits often miss. From <strong>reentrancy vulnerabilities</strong> to <strong>logic manipulation exploits</strong>, it offers <strong>real-time protection</strong> against evolving threats.</p>
+<h2 id="how-we-built-it"><strong>How We Built It</strong></h2>
+<p>Shepherd is built on a robust <strong>multi-agent system (MAS) architecture</strong>, using cutting-edge AI models and frameworks:</p>
+<ul>
+<li><strong>LangChain</strong>: Provides the foundation for multi-agent collaboration.</li>
+<li><strong>WhiteRabbitNeo AI</strong>: Guides Planner Agents in generating sophisticated attack strategies.</li>
+<li><strong>Iterative Learning Mechanism</strong>: Reflection Agents continuously improve their attack simulations based on previous results.</li>
+</ul>
+<p>This dynamic approach enables Shepherd to evolve, adapt, and simulate complex attack scenarios, making smart contracts more resilient against real-world exploits.</p>
+<h2 id="overcoming-challenges"><strong>Overcoming Challenges</strong></h2>
+<p>Developing Shepherd wasn’t without obstacles. One of the primary hurdles was the <strong>high gas fees</strong> on the <strong>Sepolia testnet</strong>. Given limited testnet tokens, we had to carefully balance testing phases to ensure efficient resource allocation without exhausting our supply too quickly.</p>
+<h2 id="proud-achievements"><strong>Proud Achievements</strong></h2>
+<p>We’re proud of building a system that goes beyond static auditing, allowing for dynamic, real-world testing. Shepherd successfully identified vulnerabilities that would be difficult to find through traditional methods, and the MAS framework&rsquo;s adaptability has shown significant promise in enhancing contract security.</p>
+<h2 id="lessons-learned"><strong>Lessons Learned</strong></h2>
+<p>Building Shepherd reinforced a key takeaway: <strong>real-time adaptability is essential for cybersecurity</strong>. Modern attacks are not just simple code exploits; they often involve multi-step logic manipulation. By integrating reflection and learning mechanisms, Shepherd provides <strong>continuous security enhancement</strong>, ensuring that even emerging threats are accounted for.</p>
+<h2 id="the-future-of-shepherd"><strong>The Future of Shepherd</strong></h2>
+<p>Shepherd is just getting started! Here’s what’s next:</p>
+<ul>
+<li><strong>Deep Q-Learning Integration</strong>: Enhancing Shepherd’s intelligence and automation.</li>
+<li><strong>Multi-Chain Compatibility</strong>: Expanding support for cross-chain vulnerabilities.</li>
+<li><strong>Advanced Exploit Simulations</strong>: Strengthening defense mechanisms against even more sophisticated attacks.</li>
+</ul>
+<p>As DeFi continues to grow, so do security challenges. With Shepherd, we aim to set a new standard for <strong>proactive smart contract security</strong>.</p>
+<hr>
+<h2 id="acknowledgments--an-incredible-hackathon-journey">Acknowledgments &amp; An Incredible Hackathon Journey!</h2>
+<p>We implemented this idea at the AI LA Cerebral Beach Hackathon hosted in October 2024. I was privileged to collaborate with a talented team from USC &amp; UCLA! — <a href="https://www.linkedin.com/in/petethaveesi-8459151b3/">Pete Thaveesi</a>, <a href="https://devpost.com/feliciathestar">Felicia Xiao</a>, <a href="https://vuvincent.com/">Vincent Vu</a>, and <a href="https://www.linkedin.com/in/prim-boonyachai/">Prim Boonyachai</a> we aimed to address a blockchain-based security challenge within a tight timeframe.</p>
+<p>The hackathon setting pushed us to innovate, leading to a solution that not only addressed the blockchain vulnerabilities but also introduced dynamic and AI-driven analysis capabilities, setting a new benchmark for Smart Contract security.</p>
+<p>🔗 <strong>Check out our project on Devpost:</strong> <a href="https://devpost.com/software/black-rabbit">devpost.com/software/black-rabbit</a></p>
+
+</content>
+<p>
+  
+  <a href="https://auti.dev/blog/cybersecurity/">#Cybersecurity</a>
+  
+  <a href="https://auti.dev/blog/blockchain/">#Blockchain</a>
+  
+  <a href="https://auti.dev/blog/smart-contracts/">#Smart-Contracts</a>
+  
+  <a href="https://auti.dev/blog/artificial-intelligence/">#Artificial-Intelligence</a>
+  
+  <a href="https://auti.dev/blog/blue-teaming/">#Blue-Teaming</a>
+  
+  <a href="https://auti.dev/blog/agents/">#Agents</a>
+  
+  <a href="https://auti.dev/blog/tools/">#Tools</a>
+  
+</p>
+
+  </main>
+  <footer>
+</footer>
+
+    
+</body>
+
+</html>
