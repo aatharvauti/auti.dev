@@ -1,6 +1,6 @@
 
 # 👋  Hello, World! 
-## I'm Atharva Auti :3
+## I'm Atharva Auti
 
 My path to cybersecurity started in ninth grade when my Windows computer crashed. Instead of giving up, I learned Linux to fix it - and that's when I discovered my passion for understanding how computers really work. Now I'm pursuing my Master's in Cybersecurity Engineering at the **University of Southern California**, building on my Bachelor's degree in Cybersecurity with minors in AI and Machine Learning from Mumbai University.
 
