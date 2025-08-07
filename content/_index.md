@@ -34,6 +34,7 @@ My experience spans across different areas of cybersecurity, including threat in
 
 #### If you like my work, perhaps buy me a coffee?
 
-[UPI](upi://pay?pa=auti@sbi)  
-[Paypal](https://paypal.me/aatharvauti)  
+[Paypal](https://www.paypal.me/autidev)
 [Venmo](https://venmo.com/u/aatharvauti)
+[UPI](upi://pay?pa=auti@sbi)  
+
