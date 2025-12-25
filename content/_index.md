@@ -1,38 +1,40 @@
 
-# 👋  Hello, World! 
-## I'm Atharva Auti
+# 👋  hello, world! 
+## i'm auti
 
-My path to cybersecurity started in ninth grade when my Windows computer crashed. Instead of giving up, I learned Linux to fix it - and that's when I discovered my passion for understanding how computers really work. Now I'm pursuing my Master's in Cybersecurity Engineering at the **University of Southern California**, building on my Bachelor's degree in Cybersecurity with minors in AI and Machine Learning from Mumbai University.
+My path to cybersecurity started in ninth grade when my Windows computer crashed. Instead of giving up, I learned Linux to fix it — and that's when I discovered my passion for understanding how computers really work. Now I'm pursuing my Master's in Cybersecurity Engineering at the **University of Southern California**, building on my Bachelor's degree in Cybersecurity with minors in AI and Machine Learning from **Mumbai University**.
 
+### experience (bc it matters!)
 Most recently, I interned at **Ernst & Young (EY)** as a **Cybersecurity Consultant**, at their Los Angeles office. I supported a Fortune 100 client in strengthening their Vulnerability Management program. I got to develop technical insight and essential soft skills like professional communication, critical thinking, and structured problem-solving. I learned to collaborate with cross-functional teams, contribute to leadership reporting, and adapt quickly to dynamic challenges. My experience working directly with client stakeholders on-site gave me a valuable perspective on real-world security operations, consulting expectations, and how to balance technical depth with business priorities.
 
-During my time as a researcher at VJTI's Centre of Excellence, I worked on reverse engineering and understanding ARM-based systems. I also got to work on making industrial systems more secure, focusing on SCADA and control systems. One of my main projects was building a security monitoring system that helps organizations track and respond to threats.
+Previously, during my time as a researcher at VJTI's Centre of Excellence (associated with Mumbai University), I researched on reverse engineering and understanding ARM-based systems. I also got to work on making industrial systems more secure, focusing on SCADA and control systems. One of my main projects was building a security monitoring system (SOC) that helps organizations track and respond to threats.
 
-Before starting graduate school, I took an entrepreneurial step and co-founded **CyHEX** - a cybersecurity company. We created security tools and solutions for businesses. This experience showed me firsthand how security threats affect organizations and taught me to build practical solutions. My work covers several areas: understanding threats, securing networks, and testing system security through ethical hacking.
+### security as a passion ;)
 
 I also regularly participate in cybersecurity competitions called CTFs (Capture The Flag). These challenges help me learn new security techniques and stay current with the latest threats. I believe in learning by doing and using hands-on experience to solve real security problems.
 
-When I'm not working with computers, I enjoy exploring the world through travel and hiking. I'm also fascinated by airplanes - there's something amazing about understanding complex machines, whether they're in the sky or in our computers. At the end of a busy day, you might find me watching the sunset, taking a moment to appreciate both the technical and natural world around us.
+When I'm not working with computers, I enjoy exploring the world through travel and hiking. I'm also fascinated by airplanes — there's something amazing about understanding complex machines, whether they're in the sky or in our computers. At the end of a busy day, you might find me watching the sunset, taking a moment to appreciate both the technical and natural world around us.
+
+### to sum it up ~
 
 My experience spans across different areas of cybersecurity, including threat intelligence, network security, and ethical hacking. My aim is to use my knowledge and experience to make computer systems more secure. I tackle each new challenge with curiosity, always ready to learn and contribute to the field of cybersecurity!
 
-#### Wanna send a message?
+#### wanna send me a message?
 
 [hi@auti.dev](mailto:hi@auti.dev)  
 [auti@usc.edu](mailto:auti@usc.edu)  
-[PGP Key (0x464BE522C38F9850)](../auti.pub)
+PGP Key [(0x2CBDD826280B8237)](../auti.pub)
 
-[Discord (auti.dev)](https://discordapp.com/channels/@me/631478564411146262/)  
-[Telegram](https://t.me/aatharvauti)
+Discord [@auti.dev](https://discordapp.com/channels/@me/631478564411146262/)
 
-#### Check out my socials!
+#### check out my socials!
 
-[GitHub](https://github.com/aatharvauti)  
-[LinkedIn](https://linkedin.com/in/auti)  
-[X Twitter](https://x.com/aatharvauti)  
-[Instagram](https://instagram.com/aatharvauti)
+GitHub [@aatharvauti](https://github.com/aatharvauti)  
+Linkedin [@auti](https://linkedin.com/in/auti)  
+Twitter X [@aatharvauti](https://x.com/aatharvauti)  
+Instagram [@traderjoesapple](https://instagram.com/traderjoesapple)
 
-#### If you like my work, perhaps buy me a coffee?
+#### if you like my work, i'd love a coffee :D
 
 [Paypal](https://www.paypal.me/autidev)
 [Venmo](https://venmo.com/u/aatharvauti)
