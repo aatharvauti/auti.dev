@@ -1,25 +1,24 @@
+# Hello World, I'm Auti 👋
 
-# 👋  hello, world! 
-## i'm auti
+I'm a cybersecurity consultant at EY based in LA, working on vulnerability management, cloud security, and risk and compliance. I did my bachelor's in Cybersecurity (with minors in AI & ML) at Mumbai University, and my master's in Cybersecurity Engineering at USC.
 
-My path to cybersecurity started in ninth grade when my Windows computer crashed. Instead of giving up, I learned Linux to fix it — and that's when I discovered my passion for understanding how computers really work. Now I'm pursuing my Master's in Cybersecurity Engineering at the **University of Southern California**, building on my Bachelor's degree in Cybersecurity with minors in AI and Machine Learning from **Mumbai University**.
+## How did I get here?
 
-### experience (bc it matters!)
-Most recently, I interned at **Ernst & Young (EY)** as a **Cybersecurity Consultant**, at their Los Angeles office. I supported a Fortune 100 client in strengthening their Vulnerability Management program. I got to develop technical insight and essential soft skills like professional communication, critical thinking, and structured problem-solving. I learned to collaborate with cross-functional teams, contribute to leadership reporting, and adapt quickly to dynamic challenges. My experience working directly with client stakeholders on-site gave me a valuable perspective on real-world security operations, consulting expectations, and how to balance technical depth with business priorities.
+In ninth grade my Windows machine died on me. I didn't want to just hand it over to someone else, so I taught myself Linux to fix it. That was it for me. I've been hooked on figuring out how computers actually work and engineering stuff ever since.
 
-Previously, during my time as a researcher at VJTI's Centre of Excellence (associated with Mumbai University), I researched on reverse engineering and understanding ARM-based systems. I also got to work on making industrial systems more secure, focusing on SCADA and control systems. One of my main projects was building a security monitoring system (SOC) that helps organizations track and respond to threats.
+## What I do?
 
-### security as a passion ;)
+I started at EY as an intern, helping a retail business run its vulnerability management program. I worked with their leadership and tech teams to decide what to priortize and tie it back to the frameworks and standards they cared about. 
 
-I also regularly participate in cybersecurity competitions called CTFs (Capture The Flag). These challenges help me learn new security techniques and stay current with the latest threats. I believe in learning by doing and using hands-on experience to solve real security problems.
+Outside of EY, I've advised a tech company on cloud infrastructure security, access management, and encryption. Before that, my previous research work covered security operations, threat intelligence, operational technology, and mobile app security. That includes building a SOC at VJTI and reverse engineering ARM-based systems.
 
-When I'm not working with computers, I enjoy exploring the world through travel and hiking. I'm also fascinated by airplanes — there's something amazing about understanding complex machines, whether they're in the sky or in our computers. At the end of a busy day, you might find me watching the sunset, taking a moment to appreciate both the technical and natural world around us.
+I play CTFs and do competitions whenever I can. It's the fastest way I know to pick up new techniques, and nothing beats breaking something yourself to understand how it works.
 
-### to sum it up ~
+## OOO
 
-My experience spans across different areas of cybersecurity, including threat intelligence, network security, and ethical hacking. My aim is to use my knowledge and experience to make computer systems more secure. I tackle each new challenge with curiosity, always ready to learn and contribute to the field of cybersecurity!
+I travel and hike when I get the chance, and I'm a big airplane nerd. Planes and computers appeal to me for the same reason, they're complicated machines that make sense once you take them apart. Most days end with me watching the sunset and enjoying SoCal. I love traveling across and you'd often find me in the SD, Bay or NYC if not LA (bi-coastal btw).
 
-#### wanna send me a message?
+**Want to talk security, conferences, nature, or aviation? Send me a message.**
 
 [hi@auti.dev](mailto:hi@auti.dev)  
 [auti@usc.edu](mailto:auti@usc.edu)  
@@ -33,10 +32,4 @@ GitHub [@aatharvauti](https://github.com/aatharvauti)
 Linkedin [@auti](https://linkedin.com/in/auti)  
 Twitter X [@aatharvauti](https://x.com/aatharvauti)  
 Instagram [@traderjoesapple](https://instagram.com/traderjoesapple)
-
-#### if you like my work, i'd love a coffee :D
-
-[Paypal](https://www.paypal.me/autidev)
-[Venmo](https://venmo.com/u/aatharvauti)
-[UPI](upi://pay?pa=auti@sbi)  
 
